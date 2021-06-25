@@ -14,3 +14,25 @@ nav li:hover {
   transform: scale(1.4);
   transition: 0.2s;
 }
+#logo-wrapper {
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    .logo_clr1 {
+      color: $clr-1;
+    }
+    .logo_clr2 {
+      color: $clr-2;
+    }
+    .logo_clr3 {
+      color: $clr-3;
+    }
+    .logo_clr4 {
+      color: $clr-4;
+    }
+    .logo_text {
+      color: $clr-neutral-500;
+      font-size: 1.4rem;
+    }
+  }
+}
