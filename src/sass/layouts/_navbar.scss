@@ -1,0 +1,16 @@
+.navBar {
+  display: flex;
+  display: inline-block;
+  width: 100vw;
+  height: 10vh;
+}
+nav li {
+  list-style: none;
+  color: $clr-neutral-900;
+}
+
+nav li:hover {
+  color: $clr-neutral-500;
+  transform: scale(1.4);
+  transition: 0.2s;
+}

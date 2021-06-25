@@ -1,0 +1,25 @@
+@import "../abstracts/variables";
+
+:root {
+  font-family: $ff-primary;
+  color: $clr-neutral-900;
+}
+.app {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh;
+}
+
+// body {
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+// /* Hide scrollbar for Chrome, Safari and Opera */
+// body::-webkit-scrollbar {
+//   display: none;
+// }
+// body {
+//   -ms-overflow-style: none; /* IE and Edge */
+//   scrollbar-width: none; /* Firefox */
+// }
