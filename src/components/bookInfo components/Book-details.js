@@ -2,7 +2,7 @@ import React from "react";
 const BookDetails = () => {
   return (
     <React.Fragment>
-      <div className="book-container">
+      <div className="book-details-container">
         <div className="book-cover-img-container">
           <a href="/book-cover-link" target="_blank">
             <img
@@ -11,7 +11,7 @@ const BookDetails = () => {
             />
           </a>
         </div>
-        <div className="book-details-container">
+        <div className="book-info-container">
           <a href="/book-title-link" target="_blank">
             <h2 className="book-title">Book Title</h2>
           </a>

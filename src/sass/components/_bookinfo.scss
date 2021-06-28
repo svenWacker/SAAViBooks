@@ -1,0 +1,7 @@
+// book-container containing both components BookDetails and BookReviews
+.book-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: aqua;
+  @include flex(center);
+}
