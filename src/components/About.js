@@ -9,7 +9,11 @@ const Landing = () => {
         <h2 className="page-headings">About SAAVIBOOKS</h2>
         <p class="about-text">
           We are all web development students at&nbsp;
-          <a class="dci" href="https://digitalcareerinstitute.org/">
+          <a
+            class="dci"
+            href="https://digitalcareerinstitute.org/"
+            target="_blank"
+          >
             DCI (Digital Career Institute)
           </a>
           in Berlin.
@@ -20,35 +24,35 @@ const Landing = () => {
           searches and retrieve book information, viewability and eBook
           availability. So you can also manage your personal bookshelves.
         </p>
+
         <h3>Team Members</h3>
         <ul>
           <li>
             <a href="https://github.com/svenWacker" target="_blank">
-              <FaGithub className="social" />
+              <FaGithub className="social" /> &nbsp;Sven&nbsp;-&nbsp;Project
+              Manager
             </a>
-            Sven
           </li>
           <li>
             <a href="https://github.com/Amopho" target="_blank">
               <FaGithub className="social" />
+              &nbsp;Alina&nbsp;-&nbsp;Project Engineer
             </a>
-            Alina
           </li>
           <li>
             <a href="https://github.com/albaranlex" target="_blank">
-              <FaGithub className="social" />
+              <FaGithub className="social" /> &nbsp;Alex&nbsp;-&nbsp;Project
+              Engineer
             </a>
-            Alex
           </li>
           <li>
             <a href="https://github.com/VivianeBusch-Wallace" target="_blank">
-              <FaGithub className="social" />
+              <FaGithub className="social" /> &nbsp;Vivi&nbsp;-&nbsp;Project
+              Engineer
             </a>
-            Vivi
           </li>
         </ul>
         <h3>Technologies</h3>
-
         <div class="technologies-container">
           <img
             src={`${process.env.PUBLIC_URL}/technologies/css.png`}
