@@ -18,7 +18,7 @@ const BookInfo = () => {
             <h3 className="book-author">by author name</h3>
           </a>
           <div className="book-small-details">
-            <span>published: year</span>
+            <span>published: year published</span>
             <span>Google rating: rating</span>
             <span>Community rating: rating</span>
             <span>Community ratings: number of ratings</span>
@@ -28,7 +28,13 @@ const BookInfo = () => {
         </div>
         <div className="book-description">Book description</div>
       </div>
-      <div className="book-reviews-container"></div>
+      <div className="book-reviews-container">
+        <div className="user-rating">rating input of user</div>
+        <textarea
+          className="user-review-input"
+          placeholder="Write a review for this book"
+        />
+      </div>
     </React.Fragment>
   );
 };
