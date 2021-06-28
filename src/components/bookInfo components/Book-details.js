@@ -19,11 +19,13 @@ const BookDetails = () => {
           <a href="/book-author-link" target="_blank">
             <h3 className="book-author">by author name</h3>
           </a>
+
           <div className="book-ratings-container">
             <span>Google rating: rating</span>
             <span>Community rating: rating</span>
             <span>Community ratings: number of ratings</span>
           </div>
+
           <div className="book-small-details-container">
             <div className="book-year-pub">published: year published</div>
             <div className="book-series">Books series with number</div>
@@ -33,6 +35,7 @@ const BookDetails = () => {
             </div>
           </div>
         </div>
+
         <div className="book-description">Book description</div>
       </div>
     </React.Fragment>

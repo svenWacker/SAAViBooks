@@ -28,6 +28,14 @@
           border: blue 2px solid;
         }
       }
+      // book raitngs container
+      .book-ratings-container {
+        border: blue 2px solid;
+        // google rating, SAAVi community rating, number of community ratings
+        span {
+          border: blue 2px solid;
+        }
+      }
     }
   }
 }
