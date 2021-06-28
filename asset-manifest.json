@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/SAAViBooks/static/css/main.2aa7aee9.chunk.css",
-    "main.js": "/SAAViBooks/static/js/main.3531fe96.chunk.js",
-    "main.js.map": "/SAAViBooks/static/js/main.3531fe96.chunk.js.map",
+    "main.css": "/SAAViBooks/static/css/main.ca92e6e8.chunk.css",
+    "main.js": "/SAAViBooks/static/js/main.761a7fff.chunk.js",
+    "main.js.map": "/SAAViBooks/static/js/main.761a7fff.chunk.js.map",
     "runtime-main.js": "/SAAViBooks/static/js/runtime-main.8b19941a.js",
     "runtime-main.js.map": "/SAAViBooks/static/js/runtime-main.8b19941a.js.map",
-    "static/js/2.f01f0af8.chunk.js": "/SAAViBooks/static/js/2.f01f0af8.chunk.js",
-    "static/js/2.f01f0af8.chunk.js.map": "/SAAViBooks/static/js/2.f01f0af8.chunk.js.map",
+    "static/js/2.0a91d1cb.chunk.js": "/SAAViBooks/static/js/2.0a91d1cb.chunk.js",
+    "static/js/2.0a91d1cb.chunk.js.map": "/SAAViBooks/static/js/2.0a91d1cb.chunk.js.map",
     "index.html": "/SAAViBooks/index.html",
-    "static/css/main.2aa7aee9.chunk.css.map": "/SAAViBooks/static/css/main.2aa7aee9.chunk.css.map",
-    "static/js/2.f01f0af8.chunk.js.LICENSE.txt": "/SAAViBooks/static/js/2.f01f0af8.chunk.js.LICENSE.txt"
+    "static/css/main.ca92e6e8.chunk.css.map": "/SAAViBooks/static/css/main.ca92e6e8.chunk.css.map",
+    "static/js/2.0a91d1cb.chunk.js.LICENSE.txt": "/SAAViBooks/static/js/2.0a91d1cb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8b19941a.js",
-    "static/js/2.f01f0af8.chunk.js",
-    "static/css/main.2aa7aee9.chunk.css",
-    "static/js/main.3531fe96.chunk.js"
+    "static/js/2.0a91d1cb.chunk.js",
+    "static/css/main.ca92e6e8.chunk.css",
+    "static/js/main.761a7fff.chunk.js"
   ]
 }
