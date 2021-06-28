@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 
 const Landing = () => {
   return (
@@ -20,13 +21,34 @@ const Landing = () => {
           availability. So you can also manage your personal bookshelves.
         </p>
         <h3>Team Members</h3>
-        <h3>Technologies</h3>
         <ul>
-          <li>Sven</li>
-          <li>Alina</li>
-          <li>Alex</li>
-          <li>Vivi</li>
+          <li>
+            <a href="https://github.com/svenWacker" target="_blank">
+              <FaGithub className="social" />
+            </a>
+            Sven
+          </li>
+          <li>
+            <a href="https://github.com/Amopho" target="_blank">
+              <FaGithub className="social" />
+            </a>
+            Alina
+          </li>
+          <li>
+            <a href="https://github.com/albaranlex" target="_blank">
+              <FaGithub className="social" />
+            </a>
+            Alex
+          </li>
+          <li>
+            <a href="https://github.com/VivianeBusch-Wallace" target="_blank">
+              <FaGithub className="social" />
+            </a>
+            Vivi
+          </li>
         </ul>
+        <h3>Technologies</h3>
+
         <div class="technologies-container">
           <img
             src={`${process.env.PUBLIC_URL}/technologies/css.png`}
