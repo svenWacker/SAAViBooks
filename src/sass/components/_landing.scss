@@ -1,6 +1,8 @@
 .landing-wrapper {
-  background-image: url(./bg-landing.png);
+  background-image: url(../../img/bg-landing.png);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
