@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
+import logo from "../img/logo-01.png";
 
 const Landing = () => {
   return (
     <React.Fragment>
       <div className="about-wrapper">
-        <h2 className="page-headings">About SAAVIBOOKS</h2>
+        <h2 className="page-headings">
+          About <img src={logo} />
+        </h2>
         <p class="about-text">
           We are all web development students at&nbsp;
           <a
