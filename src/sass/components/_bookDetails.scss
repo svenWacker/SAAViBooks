@@ -13,5 +13,21 @@
         border: blue 2px solid;
       }
     }
+    // book information container
+    .book-info-container {
+      border: blue 2px solid;
+      // anchor to book title and book author
+      a {
+        border: blue 2px solid;
+        // book title
+        .book-title {
+          border: blue 2px solid;
+        }
+        // book author
+        .book-author {
+          border: blue 2px solid;
+        }
+      }
+    }
   }
 }

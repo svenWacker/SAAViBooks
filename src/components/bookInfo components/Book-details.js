@@ -11,6 +11,7 @@ const BookDetails = () => {
             />
           </a>
         </div>
+
         <div className="book-info-container">
           <a href="/book-title-link" target="_blank">
             <h2 className="book-title">Book Title</h2>
