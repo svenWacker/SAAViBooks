@@ -7,7 +7,7 @@ const Menu = () => {
   return (
     <div className="nav-container">
       <nav className="navbar">
-        <Link to="/home" style={{ textDecoration: "none" }}>
+        <Link to="/" style={{ textDecoration: "none" }}>
           <div id="logo-wrapper">
             <span className="logo">
               <img src={logo} />
