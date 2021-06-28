@@ -28,7 +28,7 @@ const BookReviews = () => {
               </a>
             </div>
 
-            <div className="oher-user-name-date-container">
+            <div className="other-user-name-date-container">
               <p className="other-user-name">Other user username</p>
               <p className="other-user-post-date">date of review</p>
             </div>

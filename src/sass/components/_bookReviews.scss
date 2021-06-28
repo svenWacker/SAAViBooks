@@ -1,4 +1,34 @@
 // book-reviews-container is the main container of bookReviews
 .book-reviews-container {
   border: green 2px solid;
+  .user-book-review-container {
+    .user-book-review-form {
+      .user-rating {
+      }
+      textarea {
+      }
+      input {
+      }
+    }
+  }
+  .other-users-book-review-container {
+    .other-user-details-container {
+      .other-user-profile-img-container {
+        a {
+          img {
+          }
+        }
+      }
+      .other-user-name-date-container {
+        .other-user-name {
+        }
+        .other-user-post-date {
+        }
+      }
+      .other-user-rating {
+      }
+      .other-users-book-review {
+      }
+    }
+  }
 }
