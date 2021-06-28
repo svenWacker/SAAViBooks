@@ -1,0 +1,11 @@
+.technologies-container {
+  padding-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  img {
+    width: 55px;
+    height: auto;
+    margin: 2rem;
+  }
+}
