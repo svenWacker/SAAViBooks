@@ -26,6 +26,7 @@ const BookInfo = () => {
           <div className="book-series">Books series with number</div>
           <div className="book-lang">Edition Language: language</div>
         </div>
+        <div className="book-description">Book description</div>
       </div>
       <div className="book-reviews-container"></div>
     </React.Fragment>
