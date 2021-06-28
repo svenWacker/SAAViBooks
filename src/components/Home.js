@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <div className="home-wrapper">
-        <h2 className="page-headings">Landing</h2>
+        <h2 className="page-headings">Home</h2>
         <h3>Coming soon</h3>
       </div>
     </React.Fragment>
