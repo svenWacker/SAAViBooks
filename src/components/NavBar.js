@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../img/logo-06.png";
+import logo from "../img/logo-01.png";
 import { BiSearchAlt } from "react-icons/bi";
 
 const Menu = () => {
