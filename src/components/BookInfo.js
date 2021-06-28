@@ -17,14 +17,19 @@ const BookInfo = () => {
           <a href="/book-author-link" target="_blank">
             <h3 className="book-author">by author name</h3>
           </a>
-          <div className="book-small-details">
-            <span>published: year published</span>
+          <div className="book-ratings">
             <span>Google rating: rating</span>
             <span>Community rating: rating</span>
             <span>Community ratings: number of ratings</span>
           </div>
-          <div className="book-series">Books series with number</div>
-          <div className="book-lang">Edition Language: language</div>
+          <div className="book-small-details">
+            <div className="book-year-pub">published: year published</div>
+            <div className="book-series">Books series with number</div>
+            <div className="book-lang">Edition Language: language</div>
+            <div className="book-orig-lang">
+              Original Language: orig. language
+            </div>
+          </div>
         </div>
         <div className="book-description">Book description</div>
       </div>
