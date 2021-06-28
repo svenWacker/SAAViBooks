@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import mainImage from "../img/main-img.png";
 
 const Landing = () => {
   return (
     <React.Fragment>
       <div className="landing-wrapper">
-        <h2 className="page-headings">Landing</h2>
-        <h3>Coming Soon!</h3>
+        <div>
+          <img src={mainImage} />
+        </div>
+        <p>Qoute of the Day:</p>
+        <p>A journey to a thousand miles begins with a single step.</p>
         <p>ARROW DOWN</p>
       </div>
     </React.Fragment>
