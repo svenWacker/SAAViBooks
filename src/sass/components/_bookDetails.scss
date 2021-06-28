@@ -5,7 +5,7 @@
   border: blue 2px solid;
   width: auto;
   height: auto;
-  @include flex(center);
+  @include flex(center, center, column);
   // book cover image container
   .book-cover-img-container {
     border: yellow 2px solid;
