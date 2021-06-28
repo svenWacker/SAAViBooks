@@ -19,7 +19,7 @@ function Landing() {
     <React.Fragment>
       <div className="landing-wrapper">
         <span className="quote-container">
-          <h3>Qoute of the Day:</h3>
+          <h3>Quote of the Day:</h3>
           <p className="quote">{quote}</p>
           <p className="author">{author}</p>
         </span>
