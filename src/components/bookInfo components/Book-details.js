@@ -1,5 +1,5 @@
 import React from "react";
-const Bookdetails = () => {
+const BookDetails = () => {
   return (
     <React.Fragment>
       <div className="book-container">
@@ -38,4 +38,4 @@ const Bookdetails = () => {
   );
 };
 
-export default Bookdetails;
+export default BookDetails;
