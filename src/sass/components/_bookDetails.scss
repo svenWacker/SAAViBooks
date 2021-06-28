@@ -3,58 +3,89 @@
 // book-details-container is the main container of bookDetails
 .book-details-container {
   border: blue 2px solid;
+  width: auto;
+  height: auto;
+  @include flex(center);
   // book cover image container
   .book-cover-img-container {
+    border: yellow 2px solid;
+    width: auto;
+    height: auto;
     // link to book from clicking anchor around image
     a {
-      border: blue 2px solid;
+      border: cornflowerblue 2px solid;
+      width: auto;
+      height: auto;
       // actuall book cover image
       img {
-        border: blue 2px solid;
+        border: red 2px solid;
+        width: auto;
+        height: auto;
       }
     }
     // book information container
     .book-info-container {
-      border: blue 2px solid;
+      border: black 2px solid;
+      width: auto;
+      height: auto;
       // anchor to book title and book author
       a {
-        border: blue 2px solid;
+        border: cornflowerblue 2px solid;
+        width: auto;
+        height: auto;
         // book title
         .book-title {
-          border: blue 2px solid;
+          border: purple 2px solid;
+          width: auto;
+          height: auto;
         }
         // book author
         .book-author {
-          border: blue 2px solid;
+          border: orange 2px solid;
+          width: auto;
+          height: auto;
         }
       }
       // book raitngs container
       .book-ratings-container {
         border: blue 2px solid;
+        width: auto;
+        height: auto;
         // google rating, SAAVi community rating, number of community ratings
         span {
           border: blue 2px solid;
+          width: auto;
+          height: auto;
         }
       }
       // general destails about book
       .book-small-details-container {
         border: blue 2px solid;
-
+        width: auto;
+        height: auto;
         // year book was published
         .book-year-pub {
           border: blue 2px solid;
+          width: auto;
+          height: auto;
         }
         // book series the book belongs to
         .book-series {
           border: blue 2px solid;
+          width: auto;
+          height: auto;
         }
         // this edition's language
         .book-lang {
           border: blue 2px solid;
+          width: auto;
+          height: auto;
         }
         // original language of book
         .book-orig-lang {
           border: blue 2px solid;
+          width: auto;
+          height: auto;
         }
       }
     }
