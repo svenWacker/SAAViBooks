@@ -36,6 +36,8 @@ const BookDetails = () => {
           </div>
         </div>
 
+        <div className="book-genres">book's genres</div>
+
         <div className="book-description">Book description</div>
       </div>
     </React.Fragment>
