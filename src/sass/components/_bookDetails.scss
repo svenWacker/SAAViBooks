@@ -3,4 +3,15 @@
 // book-details-container is the main container of bookDetails
 .book-details-container {
   border: blue 2px solid;
+  // book cover image container
+  .book-cover-img-container {
+    // link to book from clicking anchor around image
+    a {
+      border: blue 2px solid;
+      // actuall book cover image
+      img {
+        border: blue 2px solid;
+      }
+    }
+  }
 }
