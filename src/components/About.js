@@ -7,7 +7,7 @@ const Landing = () => {
       <div className="about-wrapper">
         <h2 className="page-headings">About SAAVIBOOKS</h2>
         <p class="about-text">
-          We are all web development students at
+          We are all web development students at&nbsp;
           <a class="dci" href="https://digitalcareerinstitute.org/">
             DCI (Digital Career Institute)
           </a>
@@ -21,6 +21,12 @@ const Landing = () => {
         </p>
         <h3>Team Members</h3>
         <h3>Technologies</h3>
+        <ul>
+          <li>Sven</li>
+          <li>Alina</li>
+          <li>Alex</li>
+          <li>Vivi</li>
+        </ul>
         <div class="technologies-container">
           <img
             src={`${process.env.PUBLIC_URL}/technologies/css.png`}
@@ -53,6 +59,10 @@ const Landing = () => {
           <img
             src={`${process.env.PUBLIC_URL}/technologies/zoom.png`}
             alt="zoom"
+          />
+          <img
+            src={`${process.env.PUBLIC_URL}/technologies/trello.png`}
+            alt="trello"
           />
         </div>
       </div>
