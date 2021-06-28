@@ -1,34 +1,89 @@
 // book-reviews-container is the main container of bookReviews
 .book-reviews-container {
   border: green 2px solid;
+  width: auto;
+  height: auto;
+
   .user-book-review-container {
+    border: rosybrown 2px solid;
+    width: auto;
+    height: auto;
+
     .user-book-review-form {
+      border: orange 2px solid;
+      width: auto;
+      height: auto;
+
       .user-rating {
+        border: limegreen 2px solid;
+        width: auto;
+        height: auto;
       }
       textarea {
+        border: hotpink 2px solid;
+        width: auto;
+        height: auto;
       }
       input {
+        border: yellowgreen 2px solid;
+        width: auto;
+        height: auto;
       }
     }
   }
   .other-users-book-review-container {
+    border: orange 2px solid;
+    width: auto;
+    height: auto;
+
     .other-user-details-container {
+      border: green 2px solid;
+      width: auto;
+      height: auto;
+
       .other-user-profile-img-container {
+        border: black 2px solid;
+        width: auto;
+        height: auto;
+
         a {
+          border: blue 2px solid;
+          width: auto;
+          height: auto;
+
           img {
+            border: red 2px solid;
+            width: auto;
+            height: auto;
           }
         }
       }
       .other-user-name-date-container {
+        border: pink 2px solid;
+        width: auto;
+        height: auto;
+
         .other-user-name {
+          border: blue 2px solid;
+          width: auto;
+          height: auto;
         }
         .other-user-post-date {
+          border: brown 2px solid;
+          width: auto;
+          height: auto;
         }
       }
       .other-user-rating {
+        border: green 2px solid;
+        width: auto;
+        height: auto;
       }
-      .other-users-book-review {
-      }
+    }
+    .other-users-book-review {
+      border: violet 2px solid;
+      width: auto;
+      height: auto;
     }
   }
 }
