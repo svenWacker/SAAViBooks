@@ -5,11 +5,14 @@ const BookReviews = () => {
     <React.Fragment>
       <div className="book-reviews-container">
         <div className="user-book-review-container">
-          <div className="user-rating">rating input of user</div>
-          <textarea
-            className="user-review-input"
-            placeholder="Write a review for this book"
-          />
+          <form className="user-book-review-form">
+            <div className="user-rating">rating input of user</div>
+            <textarea
+              className="user-book-review-input"
+              placeholder="Write a review for this book"
+            />
+            <input type="submit" className="book-review-submit-button" />
+          </form>
         </div>
         <div className="other-users-book-review-container">
           <div className="other-user-details-container">
