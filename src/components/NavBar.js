@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <nav className="navbar">
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <Link to="/home" style={{ textDecoration: "none" }}>
         <div id="logo-wrapper">
           <h1 className="logo">
             <span className="logo_clr1">S</span>
