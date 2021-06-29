@@ -35,8 +35,7 @@ const BookDetails = () => {
               <RiStarFill />
               <RiStarFill />
               <RiStarHalfFill />
-              <RiStarLine />
-              /from 68 ratings
+              <RiStarLine />/ 68 ratings
             </p>
           </div>
 
@@ -50,9 +49,32 @@ const BookDetails = () => {
           </div>
         </div>
 
-        <div className="book-genres">book's genres</div>
+        <div className="book-genres">
+          Genres: horror, thriller, fantasy, fiction, sci-fi
+        </div>
 
-        <div className="book-description">Book description</div>
+        <div className="book-description">
+          Book description:
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
+            dapibus nisl. Vivamus sed suscipit lorem, id mattis nulla. Sed
+            vehicula fringilla tortor, nec fringilla velit. Ut ut massa quis
+            massa pulvinar imperdiet in sed urna. Ut facilisis ante ac
+            sollicitudin tempus. Vestibulum ante ipsum primis in faucibus orci
+            luctus et ultrices posuere cubilia curae; Nunc gravida libero lacus,
+            sed faucibus purus semper in. Vestibulum mattis ante sagittis
+            scelerisque aliquam. Donec non urna non elit sollicitudin gravida in
+            quis nisl. Morbi sit amet laoreet velit, sit amet feugiat ipsum.
+          </p>
+          <p>
+            Vestibulum a pellentesque nisi. Vivamus tortor massa, placerat sit
+            amet consectetur quis, viverra eu lacus. Sed consequat laoreet
+            porta. Phasellus posuere sed augue et efficitur. Donec ligula elit,
+            maximus bibendum est vitae, maximus ornare lorem. Donec eget arcu id
+            lectus tincidunt vehicula. Vivamus porta ante eget libero tristique,
+            sed ultrices purus luctus.
+          </p>
+        </div>
       </div>
     </React.Fragment>
   );
