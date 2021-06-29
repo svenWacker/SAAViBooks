@@ -20,3 +20,16 @@
   align-items: $alignItem;
   flex-direction: $flexDirection;
 }
+
+// mixin for min- max-width to be used with breakoutpoints
+@mixin min($min-width) {
+  @media screen and(min-width:$min-width) {
+    @content;
+  }
+}
+
+@mixin max($max-width) {
+  @media screen and(max-width:$max-width) {
+    @content;
+  }
+}
