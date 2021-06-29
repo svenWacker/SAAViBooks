@@ -6,6 +6,7 @@
         "bookshelf":[
             {
                 "position":0,
+                "bookID":"...",
                 "bookTitle":"The Lord of the Rings",
                 "status":"read",
                 "userRating":"4.5",
@@ -24,6 +25,7 @@
             },
             {
                 "position":1,
+                "bookID":"...",
                 "bookTitle":"Harry Potter",
                 "status":"read",
                 "userRating":"5",
@@ -49,9 +51,11 @@
 
             {
                 "position":0,
+                "bookID":"...",
                 "bookTitle":"Harry Potter",
                 "status":"read",
                 "userRating":"5",
+                "bookReviewDate":"21.06.2021",
                 "bookReview":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
                 dapibus nisl. Vivamus sed suscipit lorem, id mattis nulla. Sed
                 vehicula fringilla tortor, nec fringilla velit. Ut ut massa quis
@@ -65,9 +69,11 @@
             },
             {
                 "position":1,
+                "bookID":"...",
                 "bookTitle":"The Lord of the Rings",
                 "status":"read",
                 "userRating":"4.5",
+                "bookReviewDate":"21.06.2021",
                 "bookReview":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
                 dapibus nisl. Vivamus sed suscipit lorem, id mattis nulla. Sed
                 vehicula fringilla tortor, nec fringilla velit. Ut ut massa quis
@@ -91,6 +97,7 @@
 
             {
                 "position":0,
+                "bookID":"...",
                 "bookTitle":"Harry Potter",
                 "status":"read",
                 "userRating":"5",
@@ -101,6 +108,7 @@
             },
             {
                 "position":1,
+                "bookID":"...",
                 "bookTitle":"The Lord of the Rings",
                 "status":"read",
                 "userRating":"4.5",
