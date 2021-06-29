@@ -26,7 +26,7 @@ class Books extends Component {
       .query({ q: this.state.field })
       .then((data) => {
         console.log(data);
-        // set state + spread operater -spreading the data from an api to the new array - books property, when user is searching for a book
+        // set state + spread operator -spreading the data from an api to the new array - books property, when user is searching for a book
         this.setState({ books: [...data.body.items] });
       });
   };

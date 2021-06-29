@@ -83,10 +83,12 @@
         border-right: 1px black solid; //seperator line
         margin-right: 0.5rem;
         padding-right: 0.5rem;
+        min-width: 3.8rem;
         @include flex(center, center);
         // google icon
         .google-icon {
-          font-size: 19px;
+          // font-size: 19px;
+          padding: 0;
         }
       }
       // saavi-community-rating, just the words
@@ -98,13 +100,11 @@
         @include flex(center);
         // saavi community rating, just the stars
         .saavi-community-rating-stars {
-          min-width: 5.5rem;
+          min-width: 6.2rem;
           font-size: 19px;
-          // padding-top: none;
-          // padding-right: none;
-          // padding-bottom: none;
-          // padding-left: none;
-          // padding: none; //priority issue
+          * {
+            padding: 0;
+          }
         }
         // saavi-community-rating-number, just the number of ratings
         // .saavi-community-rating-number {

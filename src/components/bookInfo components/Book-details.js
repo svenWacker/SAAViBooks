@@ -29,10 +29,10 @@ const BookDetails = () => {
           </div>
 
           <div className="book-ratings-container">
-            <p className="google-rating">
+            <div className="google-rating">
               <SiGoogle className="google-icon" />
               <p>: 3.5</p>
-            </p>
+            </div>
             <p className="saavi-community-rating">SAAVI Community: </p>
             <div className="saavi-community-ratings-container">
               <p className="saavi-community-rating-stars">
