@@ -1,22 +1,27 @@
-export const SliderData = [
+import book1 from "../sample images/book-01.png";
+import book2 from "../sample images/book-02.png";
+import book3 from "../sample images/book-03.png";
+import book4 from "../sample images/book-04.png";
+
+const data = [
   {
-    image: "",
-    title: "Think Outside the Box",
+    id: 1,
+    image: { book1 },
     author: "Sydney Sheldon",
     quote: "The journey to a thousand miles begins with a single step.",
   },
 
   {
-    image:
-      "https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80",
+    id: 2,
+    image: { book2 },
     title: "City on the Edge",
     author: "Mark Goldman",
     quote: '"No man is an island."',
   },
 
   {
-    image:
-      "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
+    id: 3,
+    image: { book3 },
     title: "The Imperfections of Memory",
     author: "Angelina Aludo",
     quote:
@@ -24,10 +29,55 @@ export const SliderData = [
   },
 
   {
-    image:
-      "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
+    id: 4,
+    image: { book4 },
+    title: "My Book Cover",
+    author: "Tom Jones",
+    quote: "He who yields the sword can rule the world.",
+  },
+
+  {
+    id: 5,
+    image: { book1 },
+    title: "My Book Cover",
+    author: "Tom Jones",
+    quote: "He who yields the sword can rule the world.",
+  },
+  {
+    id: 6,
+    image: { book2 },
+    title: "My Book Cover",
+    author: "Tom Jones",
+    quote: "He who yields the sword can rule the world.",
+  },
+  {
+    id: 7,
+    image: { book3 },
+    title: "My Book Cover",
+    author: "Tom Jones",
+    quote: "He who yields the sword can rule the world.",
+  },
+  {
+    id: 8,
+    image: { book4 },
+    title: "My Book Cover",
+    author: "Tom Jones",
+    quote: "He who yields the sword can rule the world.",
+  },
+  {
+    id: 9,
+    image: { book1 },
+    title: "My Book Cover",
+    author: "Tom Jones",
+    quote: "He who yields the sword can rule the world.",
+  },
+  {
+    id: 10,
+    image: { book2 },
     title: "My Book Cover",
     author: "Tom Jones",
     quote: "He who yields the sword can rule the world.",
   },
 ];
+
+export default data;
