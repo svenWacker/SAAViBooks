@@ -71,14 +71,21 @@
         // font-size: 14px;
         // margin-bottom: none !important;
       }
+      // google rating
+      .google-rating {
+        border-right: 1px black solid; //seperator line
+        margin-right: 0.5rem;
+      }
+      // saavi community rating, just the stars
       .saavi-community-rating-stars {
         min-width: 6rem;
-        padding: none; //priority issue
+        // padding: none; //priority issue
       }
     }
     // general destails about book
     .book-small-details-container {
       // border: black 2px solid;
+      border-top: black 1px solid;
       width: auto;
       height: auto;
       // year book was published
