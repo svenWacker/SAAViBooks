@@ -1,4 +1,8 @@
 import React from "react";
+
+// google icon from react icons
+import { SiGoogle } from "react-icons/si";
+
 const BookDetails = () => {
   return (
     <React.Fragment>
@@ -21,7 +25,9 @@ const BookDetails = () => {
           </a>
 
           <div className="book-ratings-container">
-            <span>Google rating: rating</span>
+            <span>
+              <SiGoogle className="google" />: rating
+            </span>
             <span>Community rating: rating</span>
             <span>Community ratings: number of ratings</span>
           </div>
