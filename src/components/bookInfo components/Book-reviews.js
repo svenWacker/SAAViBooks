@@ -37,7 +37,30 @@ const BookReviews = () => {
           </div>
 
           <div className="other-users-book-review">
-            other user's book review text
+            Book Review:
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
+              dapibus nisl. Vivamus sed suscipit lorem, id mattis nulla. Sed
+              vehicula fringilla tortor, nec fringilla velit. Ut ut massa quis
+              massa pulvinar imperdiet in sed urna. Ut facilisis ante ac
+              sollicitudin tempus. Vestibulum ante ipsum primis in faucibus orci
+              luctus et ultrices posuere cubilia curae; Nunc gravida libero
+              lacus, sed faucibus purus semper in. Vestibulum mattis ante
+              sagittis scelerisque aliquam. Donec non urna non elit sollicitudin
+              gravida in quis nisl. Morbi sit amet laoreet velit, sit amet
+              feugiat ipsum.
+            </p>
+            <p>
+              Vestibulum a pellentesque nisi. Vivamus tortor massa, placerat sit
+              amet consectetur quis, viverra eu lacus. Sed consequat laoreet
+              porta. Phasellus posuere sed augue et efficitur. Donec ligula
+              elit, maximus bibendum est vitae, maximus ornare lorem. Donec eget
+              arcu id lectus tincidunt vehicula. Vivamus porta ante eget libero
+              tristique, sed ultrices purus luctus. Aenean ac sagittis lorem.
+              Integer faucibus, nisl eget pretium gravida, turpis justo gravida
+              eros, non ullamcorper nulla neque rhoncus mi. Duis pharetra mi nec
+              ipsum ultricies auctor.
+            </p>
           </div>
         </div>
       </div>

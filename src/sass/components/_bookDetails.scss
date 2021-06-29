@@ -58,13 +58,17 @@
       border: blue 2px solid;
       width: auto;
       height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include flex(center, space-between);
       // google rating, SAAVi community rating, number of community ratings
       p {
         border: sandybrown 2px solid;
         width: auto;
         height: auto;
         display: inline-block;
-        // font-size: 13px;
+        font-size: 14px;
         // margin-bottom: none !important;
       }
     }
@@ -110,5 +114,9 @@
     border: brown 2px solid;
     width: auto;
     height: auto;
+    // book description paragraphs
+    p {
+      font-style: italic;
+    }
   }
 }

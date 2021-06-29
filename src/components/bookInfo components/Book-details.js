@@ -27,17 +27,18 @@ const BookDetails = () => {
           </a>
 
           <div className="book-ratings-container">
-            <p>
+            <p className="google-rating">
               <SiGoogle className="google" />: 3.5
             </p>
-            <p>SAAVI Community: </p>
-            <p>
+            <p className="saavi-community-rating">SAAVI Community: </p>
+            <p className="saavi-community-rating-stars">
               <RiStarFill />
               <RiStarFill />
               <RiStarFill />
               <RiStarHalfFill />
-              <RiStarLine />/ 68 ratings
+              <RiStarLine />
             </p>
+            <p className="saavi-community-rating-number">/ 68 ratings</p>
           </div>
 
           <div className="book-small-details-container">
