@@ -28,8 +28,8 @@ const BookDetails = () => {
             <span>
               <SiGoogle className="google" />: rating
             </span>
-            <span>Community rating: rating</span>
-            <span>Community ratings: number of ratings</span>
+            <span>SAAVI Community rating: rating</span>
+            <span>SAAVI Community ratings: number of ratings</span>
           </div>
 
           <div className="book-small-details-container">

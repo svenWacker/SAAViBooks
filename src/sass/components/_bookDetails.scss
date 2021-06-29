@@ -7,6 +7,10 @@
   height: auto;
   @include flex(center, center, column);
   padding: 1rem;
+  // all items inside .book-details-container
+  * {
+    padding: 0.2rem 0;
+  }
   // book cover image container
   .book-cover-img-container {
     border: yellow 2px solid;
