@@ -30,8 +30,9 @@ const BookDetails = () => {
             <p>
               <SiGoogle className="google" />: 3.5
             </p>
+            <p>SAAVI Community: </p>
             <p>
-              SAAVI Community: <RiStarFill />
+              <RiStarFill />
               <RiStarFill />
               <RiStarFill />
               <RiStarHalfFill />

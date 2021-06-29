@@ -1,4 +1,7 @@
 // Vendor
+// Bootstrap
+// @import "~bootstrap/scss/bootstrap";
+
 // actually not used
 @import "vendor/_vendor-dir";
 
@@ -10,9 +13,6 @@
 
 // Layout
 @import "layouts/_layouts-dir";
-
-// // Bootstrap
-@import "~bootstrap/scss/bootstrap";
 
 // Components
 @import "components/_components-dir";
