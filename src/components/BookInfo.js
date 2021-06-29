@@ -8,10 +8,8 @@ import BookReviews from "./bookInfo components/Book-reviews";
 const BookInfo = () => {
   return (
     <React.Fragment>
-      <li className="book-container">
-        <BookDetails />
-        <BookReviews />
-      </li>
+      <BookDetails />
+      <BookReviews />
     </React.Fragment>
   );
 };

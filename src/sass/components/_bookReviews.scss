@@ -4,7 +4,10 @@
   width: auto;
   height: auto;
   padding: 1rem;
-
+  // all items inside .book-details-container
+  * {
+    padding: 0.2rem 0;
+  }
   .user-book-review-container {
     border: rosybrown 2px solid;
     width: auto;

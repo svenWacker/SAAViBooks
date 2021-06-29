@@ -9,7 +9,7 @@
   padding: 1rem;
   // all items inside .book-details-container
   * {
-    padding: 0.2rem 0;
+    padding: 0.2rem 0.1rem;
   }
   // book cover image container
   .book-cover-img-container {
@@ -63,6 +63,7 @@
         border: sandybrown 2px solid;
         width: auto;
         height: auto;
+        font-size: 14px;
       }
     }
     // general destails about book

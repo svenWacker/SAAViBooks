@@ -12,8 +12,9 @@ const Books = () => {
         <h3>Top Rated Books/Book Recommendations/Book Of The Day</h3>
       </div>
       <ul className="search-results">
-        <BookInfo />
+        <li className="book-container"></li>
       </ul>
+      <BookInfo />
     </React.Fragment>
   );
 };
