@@ -8,7 +8,7 @@ const Books = () => {
   return (
     <React.Fragment>
       <div className="books-wrapper">
-        <h2 className="page-headings">Books</h2>
+        <h2 className="page-headings">Meet your next book</h2>
         <h3>Coming soon</h3>
       </div>
       <BookInfo />
