@@ -59,11 +59,13 @@
       width: auto;
       height: auto;
       // google rating, SAAVi community rating, number of community ratings
-      span {
+      p {
         border: sandybrown 2px solid;
         width: auto;
         height: auto;
-        font-size: 14px;
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: none !important;
       }
     }
     // general destails about book

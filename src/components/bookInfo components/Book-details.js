@@ -2,6 +2,8 @@ import React from "react";
 
 // google icon from react icons
 import { SiGoogle } from "react-icons/si";
+// stars for rating from react icons
+import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
 
 const BookDetails = () => {
   return (
@@ -25,11 +27,17 @@ const BookDetails = () => {
           </a>
 
           <div className="book-ratings-container">
-            <span>
-              <SiGoogle className="google" />: rating
-            </span>
-            <span>SAAVI Community rating: rating</span>
-            <span>SAAVI Community ratings: number of ratings</span>
+            <p>
+              <SiGoogle className="google" />: 3.5
+            </p>
+            <p>
+              SAAVI Community rating: <RiStarFill />
+              <RiStarFill />
+              <RiStarFill />
+              <RiStarHalfFill />
+              <RiStarLine />
+            </p>
+            <p>SAAVI Community ratings: 68 </p>
           </div>
 
           <div className="book-small-details-container">
