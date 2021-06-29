@@ -2,7 +2,7 @@
 
 // book-details-container is the main container of bookDetails
 .book-details-container {
-  border: blue 2px solid;
+  // border: blue 2px solid;
   width: auto;
   height: auto;
   @include flex(center, center, column);
@@ -31,31 +31,31 @@
   }
   // book information container
   .book-info-container {
-    border: black 2px solid;
+    // border: black 2px solid;
     width: auto;
     height: auto;
     // anchor to book title and book author
     a {
-      border: cornflowerblue 2px solid;
+      // border: cornflowerblue 2px solid;
       width: auto;
       height: auto;
       display: block;
       // book title
       .book-title {
-        border: purple 2px solid;
+        // border: purple 2px solid;
         width: 100%;
         height: 100%;
       }
       // book author
       .book-author {
-        border: orange 2px solid;
+        // border: orange 2px solid;
         width: auto;
         height: auto;
       }
     }
     // book raitngs container
     .book-ratings-container {
-      border: blue 2px solid;
+      // border: blue 2px solid;
       width: auto;
       height: auto;
       display: flex;
@@ -64,40 +64,44 @@
       @include flex(center, space-between);
       // google rating, SAAVi community rating, number of community ratings
       p {
-        border: sandybrown 2px solid;
+        // border: sandybrown 2px solid;
         width: auto;
         height: auto;
         display: inline-block;
-        font-size: 14px;
+        // font-size: 14px;
         // margin-bottom: none !important;
+      }
+      .saavi-community-rating-stars {
+        min-width: 6rem;
+        padding: none; //priority issue
       }
     }
     // general destails about book
     .book-small-details-container {
-      border: black 2px solid;
+      // border: black 2px solid;
       width: auto;
       height: auto;
       // year book was published
       .book-year-pub {
-        border: violet 2px solid;
+        // border: violet 2px solid;
         width: auto;
         height: auto;
       }
       // book series the book belongs to
       .book-series {
-        border: orangered 2px solid;
+        // border: orangered 2px solid;
         width: auto;
         height: auto;
       }
       // this edition's language
       .book-lang {
-        border: yellow 2px solid;
+        // border: yellow 2px solid;
         width: auto;
         height: auto;
       }
       // original language of book
       .book-orig-lang {
-        border: olivedrab 2px solid;
+        // border: olivedrab 2px solid;
         width: auto;
         height: auto;
       }
@@ -105,13 +109,13 @@
   }
   // book genres
   .book-genres {
-    border: orange 2px solid;
+    // border: orange 2px solid;
     width: auto;
     height: auto;
   }
   // book description
   .book-description {
-    border: brown 2px solid;
+    // border: brown 2px solid;
     width: auto;
     height: auto;
     // book description paragraphs

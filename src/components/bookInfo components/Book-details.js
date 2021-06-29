@@ -31,14 +31,16 @@ const BookDetails = () => {
               <SiGoogle className="google" />: 3.5
             </p>
             <p className="saavi-community-rating">SAAVI Community: </p>
-            <p className="saavi-community-rating-stars">
-              <RiStarFill />
-              <RiStarFill />
-              <RiStarFill />
-              <RiStarHalfFill />
-              <RiStarLine />
-            </p>
-            <p className="saavi-community-rating-number">/ 68 ratings</p>
+            <div className="saavi-community-ratings-container">
+              <p className="saavi-community-rating-stars">
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarHalfFill />
+                <RiStarLine />
+              </p>
+              <p className="saavi-community-rating-number">from 68 ratings</p>
+            </div>
           </div>
 
           <div className="book-small-details-container">
