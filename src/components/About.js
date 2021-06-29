@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import logo from "../img/logo-01.png";
+import Footer from "./Footer";
 
 const Landing = () => {
   return (
@@ -116,6 +117,7 @@ const Landing = () => {
           </svg>
         </div>
       </div>
+      <Footer />
     </React.Fragment>
   );
 };
