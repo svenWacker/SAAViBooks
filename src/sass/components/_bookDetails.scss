@@ -1,4 +1,4 @@
-// from 0px up to 320px width
+// from 0px up to 480px width
 
 // book-details-container is the main container of bookDetails
 .book-details-container {
@@ -6,6 +6,7 @@
   width: auto;
   height: auto;
   @include flex(center, center, column);
+  padding: 1rem;
   // book cover image container
   .book-cover-img-container {
     border: yellow 2px solid;
