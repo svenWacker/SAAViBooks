@@ -31,13 +31,13 @@ const BookDetails = () => {
               <SiGoogle className="google" />: 3.5
             </p>
             <p>
-              SAAVI Community rating: <RiStarFill />
+              SAAVI Community: <RiStarFill />
               <RiStarFill />
               <RiStarFill />
               <RiStarHalfFill />
               <RiStarLine />
+              /from 68 ratings
             </p>
-            <p>SAAVI Community ratings: 68 </p>
           </div>
 
           <div className="book-small-details-container">
