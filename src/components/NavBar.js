@@ -15,7 +15,11 @@ const Menu = () => {
           </div>
         </Link>
         <span>
-          <input className="search-bar" type="text" placeholder="Search.." />
+          <input
+            className="search-bar"
+            type="text"
+            placeholder="Search..."
+          ></input>
           <span className="search-icon">
             <BiSearchAlt />
           </span>
