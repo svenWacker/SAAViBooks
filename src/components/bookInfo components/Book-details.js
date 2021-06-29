@@ -30,7 +30,8 @@ const BookDetails = () => {
 
           <div className="book-ratings-container">
             <p className="google-rating">
-              <SiGoogle className="google-icon" />: 3.5
+              <SiGoogle className="google-icon" />
+              <p>: 3.5</p>
             </p>
             <p className="saavi-community-rating">SAAVI Community: </p>
             <div className="saavi-community-ratings-container">

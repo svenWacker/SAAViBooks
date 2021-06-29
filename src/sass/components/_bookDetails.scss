@@ -32,7 +32,7 @@
   // book information container
   .book-info-container {
     // border: black 2px solid;
-    width: auto;
+    width: 100%;
     height: auto;
     // book title and author container
     .book-title-author-container {
@@ -42,6 +42,10 @@
         width: auto;
         height: auto;
         display: block;
+        cursor: pointer;
+        &:visited {
+          color: $dark-teal;
+        }
         // book title
         .book-title {
           // border: purple 2px solid;
@@ -79,7 +83,7 @@
         border-right: 1px black solid; //seperator line
         margin-right: 0.5rem;
         padding-right: 0.5rem;
-        @include flex(center);
+        @include flex(center, center);
         // google icon
         .google-icon {
           font-size: 19px;
@@ -89,21 +93,30 @@
       .saavi-community-rating {
         margin-right: 0.5rem;
       }
-      // saavi community rating, just the stars
-      .saavi-community-rating-stars {
-        min-width: 5.5rem;
-        font-size: 19px;
-        // padding: none; //priority issue
+      // saavi-community-ratings-container both stars and rating number
+      .saavi-community-ratings-container {
+        @include flex(center);
+        // saavi community rating, just the stars
+        .saavi-community-rating-stars {
+          min-width: 5.5rem;
+          font-size: 19px;
+          // padding-top: none;
+          // padding-right: none;
+          // padding-bottom: none;
+          // padding-left: none;
+          // padding: none; //priority issue
+        }
+        // saavi-community-rating-number, just the number of ratings
+        // .saavi-community-rating-number {
+        //   font-size: small;
+        // }
       }
-      // saavi-community-rating-number, just the number of ratings
-      // .saavi-community-rating-number {
-      //   font-size: small;
-      // }
     }
     // general destails about book
     .book-small-details-container {
       // border: black 2px solid;
-      border-top: black 1px solid;
+      border-top: black 1px solid; //seperator line
+      border-bottom: black 1px solid; //seperator line
       width: auto;
       height: auto;
       // year book was published
@@ -137,6 +150,7 @@
     // border: orange 2px solid;
     width: auto;
     height: auto;
+    padding-top: 0.5rem;
   }
   // book description
   .book-description {
