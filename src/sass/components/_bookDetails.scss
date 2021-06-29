@@ -34,26 +34,29 @@
     // border: black 2px solid;
     width: auto;
     height: auto;
-    // anchor to book title and book author
-    a {
-      // border: cornflowerblue 2px solid;
-      width: auto;
-      height: auto;
-      display: block;
-      // book title
-      .book-title {
-        // border: purple 2px solid;
-        width: 100%;
-        height: 100%;
-      }
-      // book author
-      .book-author {
-        // border: orange 2px solid;
+    // book title and author container
+    .book-title-author-container {
+      // anchor to book title and book author
+      a {
+        // border: cornflowerblue 2px solid;
         width: auto;
         height: auto;
+        display: block;
+        // book title
+        .book-title {
+          // border: purple 2px solid;
+          width: 100%;
+          height: 100%;
+        }
+        // book author
+        .book-author {
+          // border: orange 2px solid;
+          width: auto;
+          height: auto;
+        }
       }
     }
-    // book raitngs container
+    // book ratings container
     .book-ratings-container {
       // border: blue 2px solid;
       width: auto;
@@ -75,12 +78,27 @@
       .google-rating {
         border-right: 1px black solid; //seperator line
         margin-right: 0.5rem;
+        padding-right: 0.5rem;
+        @include flex(center);
+        // google icon
+        .google-icon {
+          font-size: 19px;
+        }
+      }
+      // saavi-community-rating, just the words
+      .saavi-community-rating {
+        margin-right: 0.5rem;
       }
       // saavi community rating, just the stars
       .saavi-community-rating-stars {
-        min-width: 6rem;
+        min-width: 5.5rem;
+        font-size: 19px;
         // padding: none; //priority issue
       }
+      // saavi-community-rating-number, just the number of ratings
+      // .saavi-community-rating-number {
+      //   font-size: small;
+      // }
     }
     // general destails about book
     .book-small-details-container {

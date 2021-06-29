@@ -19,16 +19,18 @@ const BookDetails = () => {
         </div>
 
         <div className="book-info-container">
-          <a href="/book-title-link" target="_blank">
-            <h2 className="book-title">Book Title</h2>
-          </a>
-          <a href="/book-author-link" target="_blank">
-            <h3 className="book-author">by author name</h3>
-          </a>
+          <div className="book-title-author-container">
+            <a href="/book-title-link" target="_blank">
+              <h2 className="book-title">Book Title</h2>
+            </a>
+            <a href="/book-author-link" target="_blank">
+              <h3 className="book-author">by author name</h3>
+            </a>
+          </div>
 
           <div className="book-ratings-container">
             <p className="google-rating">
-              <SiGoogle className="google" />: 3.5
+              <SiGoogle className="google-icon" />: 3.5
             </p>
             <p className="saavi-community-rating">SAAVI Community: </p>
             <div className="saavi-community-ratings-container">
