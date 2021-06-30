@@ -18,23 +18,6 @@ class Books extends Component {
     };
   }
 
-<<<<<<< HEAD
-  findBook = (e) => {
-    e.preventDefault();
-    request
-      // superagent
-      .get("https://www.googleapis.com/books/v1/volumes")
-      .query({ q: this.state.field })
-      .then((data) => {
-        console.log(data);
-        // set state + spread operater -spreading the data from an api to the new array - books property, when user is searching for a book
-        this.setState({ books: [...data.body.items] });
-      });
-    //   .catch((err => {console.log(`Your had an ${err}`));
-    //  });
-    //  }
-  };
-=======
   // findBook = (e) => {
   //   e.preventDefault();
   //   request
@@ -47,7 +30,6 @@ class Books extends Component {
   //       this.setState({ books: [...data.body.items] });
   //     });
   // };
->>>>>>> main
 
   // handleSearch = (e) => {
   //   // console.log(e.target.value);

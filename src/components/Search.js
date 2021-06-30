@@ -3,14 +3,6 @@ import request from "superagent";
 import { useHistory } from "react-router-dom";
 
 const Search = (props) => {
-<<<<<<< HEAD
-  return (
-    <div className="area">
-      <form onSubmit={props.findBook} action="">
-        <input onChange={props.handleSearch} type="text" />
-        <button type="submit">Search</button>
-      </form>
-=======
   const [userInput, setUserInput] = useState("");
   const [booksData, setBooksData] = useState([]);
 
@@ -36,7 +28,6 @@ const Search = (props) => {
     <div className="area">
       <input onChange={(e) => setUserInput(e.target.value)} type="text" />
       <button onClick={handleClick}>Search</button>
->>>>>>> main
     </div>
   );
 };
