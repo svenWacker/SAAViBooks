@@ -49,7 +49,7 @@ class Books extends Component {
             <h1>{book.volumeInfo.title}</h1>
           ))}
         </div>
-        <BookInfo />
+        {/* <BookInfo /> */}
       </React.Fragment>
     );
   }
