@@ -36,73 +36,80 @@ const BookDetails = ({ bookId }) => {
     return (
       <React.Fragment>
         <div className="book-details-container">
-          <div className="book-cover-img-container">
-            <a href={bookData.volumeInfo.previewLink} target="_blank">
-              <img
-                src={
-                  bookData.volumeInfo.imageLinks.thumbnail ||
-                  bookData.volumeInfo.imageLinks.smallThumbnail
-                }
-                className="book-cover-img"
-                alt={`${bookData.volumeInfo.title}'s book cover picture`}
-              />
-            </a>
-          </div>
+          <div className="book-img-details-container">
+            <div className="book-cover-img-container">
+              <a href={bookData.volumeInfo.previewLink} target="_blank">
+                <img
+                  src={
+                    bookData.volumeInfo.imageLinks.thumbnail ||
+                    bookData.volumeInfo.imageLinks.smallThumbnail
+                  }
+                  className="book-cover-img"
+                  alt={`${bookData.volumeInfo.title}'s book cover picture`}
+                />
+              </a>
+            </div>
 
-          <div className="book-info-container">
-            <div className="book-title-author-container">
-              <a href={bookData.volumeInfo.previewLink} target="_blank">
-                <h2 className="book-title">
-                  Book Title {bookData.volumeInfo.title}
-                </h2>
-              </a>
-              <a href={bookData.volumeInfo.previewLink} target="_blank">
-                <h3 className="book-author">
-                  by {bookData.volumeInfo.authors}
-                </h3>
-              </a>
+            <div className="book-info-container">
+              <div className="book-title-author-container">
+                <a href={bookData.volumeInfo.previewLink} target="_blank">
+                  <h2 className="book-title">
+                    Book Title {bookData.volumeInfo.title}
+                  </h2>
+                </a>
+                <a href={bookData.volumeInfo.previewLink} target="_blank">
+                  <h3 className="book-author">
+                    by {bookData.volumeInfo.authors}
+                  </h3>
+                </a>
+              </div>
+
+              <div className="book-ratings-container">
+                <div className="google-rating">
+                  <SiGoogle className="google-icon" />
+                  <p>
+                    :
+                    {bookData.volumeInfo.averageRating
+                      ? bookData.volumeInfo.averageRating
+                      : "not rated"}
+                  </p>
+                </div>
+                <p className="saavi-community-rating">SAAVI Community: </p>
+                <div className="saavi-community-ratings-container">
+                  <p className="saavi-community-rating-stars">
+                    <RiStarFill />
+                    <RiStarFill />
+                    <RiStarFill />
+                    <RiStarHalfFill />
+                    <RiStarLine />
+                  </p>
+                  <p className="saavi-community-rating-number">
+                    from 3 ratings
+                  </p>
+                </div>
+              </div>
+
+              <div className="book-small-details-container">
+                <div className="book-year-pub">
+                  published: {bookData.volumeInfo.publishedDate}
+                </div>
+                <div className="book-lang">
+                  Edition Language: {bookData.volumeInfo.language}
+                </div>
+                <div className="book-orig-lang">
+                  Original Language: {bookData.volumeInfo.language}
+                </div>
+              </div>
             </div>
-            <div className="book-ratings-container">
-              <div className="google-rating">
-                <SiGoogle className="google-icon" />
-                <p>
-                  :
-                  {bookData.volumeInfo.averageRating
-                    ? bookData.volumeInfo.averageRating
-                    : "not rated"}
-                </p>
-              </div>
-              <p className="saavi-community-rating">SAAVI Community: </p>
-              <div className="saavi-community-ratings-container">
-                <p className="saavi-community-rating-stars">
-                  <RiStarFill />
-                  <RiStarFill />
-                  <RiStarFill />
-                  <RiStarHalfFill />
-                  <RiStarLine />
-                </p>
-                <p className="saavi-community-rating-number">from 3 ratings</p>
-              </div>
-            </div>
-            <div className="book-small-details-container">
-              <div className="book-year-pub">
-                published: {bookData.volumeInfo.publishedDate}
-              </div>
-              <div className="book-lang">
-                Edition Language: {bookData.volumeInfo.language}
-              </div>
-              <div className="book-orig-lang">
-                Original Language: {bookData.volumeInfo.language}
-              </div>
-            </div>
+          </div>
+          <div className="book-genre-description-container">
             <div className="book-genres">
               Genres: {bookData.volumeInfo.categories}
             </div>
-          </div>
-
-          <div className="book-description">
-            Book description:
-            <p>{bookData.volumeInfo.description}</p>
+            <div className="book-description">
+              Book description:
+              <p>{bookData.volumeInfo.description}</p>
+            </div>
           </div>
         </div>
       </React.Fragment>
