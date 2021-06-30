@@ -29,6 +29,9 @@ class Books extends Component {
         // set state + spread operater -spreading the data from an api to the new array - books property, when user is searching for a book
         this.setState({ books: [...data.body.items] });
       });
+    //   .catch((err => {console.log(`Your had an ${err}`));
+    //  });
+    //  }
   };
 
   handleSearch = (e) => {
@@ -44,7 +47,7 @@ class Books extends Component {
           <Search findBook={this.findBook} handleSearch={this.handleSearch} />
           <BookList books={this.state.books} />
         </div>
-        <BookInfo />
+        {/* <BookInfo /> */}
       </React.Fragment>
     );
   }
