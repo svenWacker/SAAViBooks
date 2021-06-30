@@ -1,5 +1,8 @@
 import React from "react";
 
+// dummy user's data
+// import DummyUsers from "../../dummyUsers.json";
+
 const BookReviews = () => {
   return (
     <React.Fragment>

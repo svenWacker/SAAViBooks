@@ -8,6 +8,9 @@ import BookInfo from "./components/BookInfo";
 import About from "./components/About";
 import Soon from "./components/Soon";
 
+// dummy user's data
+// import DummyUsers from "./dummyUsers.json";
+
 const App = () => {
   return (
     <Router>

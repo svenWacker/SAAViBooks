@@ -1,8 +1,10 @@
 // book-reviews-container is the main container of bookReviews
 .book-reviews-container {
   border: green 2px solid;
+  border-radius: 1rem;
   width: auto;
   height: auto;
+  margin: 0.5rem;
   padding: 1rem;
   // all items inside .book-details-container
   * {
