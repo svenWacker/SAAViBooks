@@ -73,9 +73,9 @@
             height: 100%;
           }
           // book author
-          .book-author {
-            // border: orange 2px solid;
-          }
+          // .book-author {
+          //   // border: orange 2px solid;
+          // }
         }
       }
       // book ratings container
@@ -179,6 +179,7 @@
     // border: brown 2px solid;
     @include flex(space-evenly, center, column);
     width: 100%;
+    min-height: 25rem;
     margin: 0;
     // book genres
     .book-genres {
