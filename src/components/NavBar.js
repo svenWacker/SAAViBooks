@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../img/logo-01.png";
 import { BiSearchAlt } from "react-icons/bi";
+import Search from "./Search";
 
 const Menu = () => {
   return (
@@ -15,11 +16,18 @@ const Menu = () => {
           </div>
         </Link>
         <span>
-          <input className="search-bar" type="text" placeholder="Search.." />
+          <Search />
+        </span>
+        {/* <span>
+          <input
+            className="search-bar"
+            type="text"
+            placeholder="Search..."
+          ></input>
           <span className="search-icon">
             <BiSearchAlt />
           </span>
-        </span>
+        </span> */}
 
         <Link to="/home" style={{ textDecoration: "none" }}>
           <li>Home</li>
