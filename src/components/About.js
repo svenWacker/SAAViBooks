@@ -6,8 +6,8 @@ import Footer from "./Footer";
 const About = () => {
   return (
     <React.Fragment>
-      <div className="about-wrapper">
-        <div className="bg-wrapper">
+      <div className="bg-wrapper">
+        <div className="about-wrapper">
           <h2 className="page-headings">
             About <img src={logo} />
           </h2>
@@ -98,6 +98,9 @@ const About = () => {
             />
           </div>
         </div>
+      </div>
+      <div class="ocean">
+        <div class="wave"></div>
       </div>
       <Footer />
     </React.Fragment>
