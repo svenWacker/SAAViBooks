@@ -12,7 +12,6 @@ const Search = (props) => {
       .query({ q: userInput })
       .then((data) => {
         console.log(data);
-        // set state + spread operater -spreading the data from an api to the new array - books property, when user is searching for a book
         setBooksData(data.body.items);
         // this.setState({ books: [...data.body.items] });
       });

@@ -6,7 +6,19 @@ import { SiGoogle } from "react-icons/si";
 import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
 
 const BookDetails = ({ bookId }) => {
-  useEffect();
+  bookId = "SNAjMMp3H5UC"; //temporary for testing
+  const [someState, setSomeState] = useState(""); //need to be array here?
+  useEffect(() => {
+    fetch("https://www.googleapis.com/books/v1/volumes/" + bookId)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Check fetch >>");
+        console.log(bookId);
+        console.log(data);
+        setSomeState(data);
+      })
+      .catch((err) => console.log(`Your had an ${err}`));
+  }, []);
 
   return (
     <React.Fragment>
