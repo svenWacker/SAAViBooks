@@ -32,6 +32,7 @@ const Search = (props) => {
         className="search-bar"
         onChange={(e) => setUserInput(e.target.value)}
         type="text"
+        placeholder="Search .."
       />
       <button className="search-icon" onClick={handleClick}>
         <BiSearchAlt />
