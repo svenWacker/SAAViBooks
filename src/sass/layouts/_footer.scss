@@ -3,15 +3,17 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: $dark-teal;
-  // color: $dark-teal;
+  // background-color: $dark-teal;
+  color: $clr-neutral-100;
+  background: #015871;
   width: 100vw;
   height: auto;
-
+  z-index: 3;
   .copyright {
     h6 {
       font-size: 1.4rem;
       margin: 0.3rem;
+      z-index: 3;
     }
   }
 }
