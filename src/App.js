@@ -19,7 +19,6 @@ const App = () => {
           <Route path="/home" exact component={Landing} />
           <Route path="/SAAViBooks/" exact component={Landing} />
           <Route path="/books" exact component={Books} />
-          {/* <Route path="/bookInfo/:id" exact component={BookInfo} /> */}
           <Route
             path="/bookInfo/:id"
             exact
