@@ -66,9 +66,9 @@ const BookDetails = ({ bookId }) => {
 
               <div className="book-ratings-container">
                 <div className="google-rating">
-                  <SiGoogle className="google-icon" />
+                  {/* <SiGoogle className="google-icon" /> */}
+                  <span>Google:</span>
                   <p>
-                    :
                     {bookData.volumeInfo.averageRating
                       ? bookData.volumeInfo.averageRating
                       : "not rated"}
@@ -91,7 +91,7 @@ const BookDetails = ({ bookId }) => {
 
               <div className="book-small-details-container">
                 <div className="book-year-pub">
-                  published: {bookData.volumeInfo.publishedDate}
+                  <p>published: {bookData.volumeInfo.publishedDate}</p>
                 </div>
                 <div className="book-lang">
                   Edition Language: {bookData.volumeInfo.language}
