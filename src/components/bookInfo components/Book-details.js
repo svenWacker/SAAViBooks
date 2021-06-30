@@ -6,7 +6,7 @@ import { SiGoogle } from "react-icons/si";
 import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
 
 const BookDetails = ({ bookId }) => {
-  bookId = "4JKvDAAAQBAJ"; //temporary for testing
+  bookId = "f280CwAAQBAJ"; //temporary for testing
 
   const [bookData, setBookData] = useState(false);
 
@@ -37,14 +37,14 @@ const BookDetails = ({ bookId }) => {
       <React.Fragment>
         <div className="book-details-container">
           <div className="book-cover-img-container">
-            <a href="/book-cover-link" target="_blank">
+            <a href={bookData.volumeInfo.previewLink} target="_blank">
               <img
                 src={
                   bookData.volumeInfo.imageLinks.thumbnail ||
                   bookData.volumeInfo.imageLinks.smallThumbnail
                 }
                 className="book-cover-img"
-                alt="book title's book cover picture"
+                alt={`${bookData.volumeInfo.title}'s book cover picture`}
               />
             </a>
           </div>
@@ -67,7 +67,8 @@ const BookDetails = ({ bookId }) => {
               <div className="google-rating">
                 <SiGoogle className="google-icon" />
                 <p>
-                  {bookData.averageRating
+                  :
+                  {bookData.volumeInfo.averageRating
                     ? bookData.volumeInfo.averageRating
                     : "not rated"}
                 </p>
@@ -88,7 +89,6 @@ const BookDetails = ({ bookId }) => {
               <div className="book-year-pub">
                 published: {bookData.volumeInfo.publishedDate}
               </div>
-              <div className="book-series">Books series with number</div>
               <div className="book-lang">
                 Edition Language: {bookData.volumeInfo.language}
               </div>

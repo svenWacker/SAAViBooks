@@ -86,8 +86,9 @@
         min-width: 3.8rem;
         @include flex(center, center);
         // google icon
+        padding: 0;
         .google-icon {
-          // font-size: 19px;
+          // font-size: 16px;
           padding: 0;
         }
       }
