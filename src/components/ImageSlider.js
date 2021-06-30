@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import data from "./DummyBookAPI";
+import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import SwiperCore, { Navigation } from "swiper";
+import BookCard from "./BookCard";
 
 SwiperCore.use([Navigation]);
 
@@ -18,13 +19,14 @@ function ImageSlider() {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        {data.map((book) => (
-          <SwiperSlide key={book.id}>
-            <div className="book">
-              <img src={book.image} />
-            </div>
-          </SwiperSlide>
-        ))}
+        <SwiperSlide>
+          <BookCard />
+        </SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
       </Swiper>
     </div>
   );

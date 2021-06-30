@@ -1,5 +1,6 @@
 import React from "react";
 import BookCard from "./BookCard";
+import ImageSlider from "./ImageSlider";
 
 const BookList = (props) => {
   return (

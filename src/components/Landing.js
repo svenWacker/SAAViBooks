@@ -35,9 +35,11 @@ function Landing() {
         </div>
 
         <div className="bottom-main-container">
-          <p> Read More </p>
+          <p> Or Search Your Book Here </p>
           <span>
-            <IoIosArrowDropdownCircle />
+            <Link to="/books" style={{ textDecoration: "none" }}>
+              <IoIosArrowDropdownCircle />
+            </Link>
           </span>
         </div>
       </div>

@@ -7,9 +7,9 @@ function QuoteGenerator() {
   useEffect(() => {
     fetch("http://api.quotable.io/random")
       .then((res) => res.json())
-      .then((quote) => {
-        setQuote(quote.content);
-        setAuthor(quote.author);
+      .then((data) => {
+        setQuote(data.content);
+        setAuthor(data.author);
       });
   }, []);
 

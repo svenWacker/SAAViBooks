@@ -1,23 +1,20 @@
 import React, { useState, useEffect } from "react";
 
 function TopReviewsGenerator() {
-  const [quote, setQuote] = useState("");
-  const [author, setAuthor] = useState("");
+  const [review, setReview] = useState("");
 
   useEffect(() => {
-    fetch("http://api.quotable.io/random")
+    fetch("https://api.nytimes.com/svc/books/v3/reviews.json")
       .then((res) => res.json())
-      .then((quote) => {
-        setQuote(quote.content);
-        setAuthor(quote.author);
+      .then((data) => {
+        setReview(data.status);
       });
   }, []);
 
   return (
     <div className="reviews-wrapper">
       <div>
-        <p className="quote">{quote}</p>
-        <p className="author">{author}</p>
+        <p className="quote">{review}</p>
       </div>
     </div>
   );
