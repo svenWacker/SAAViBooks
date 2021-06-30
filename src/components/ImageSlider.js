@@ -6,6 +6,8 @@ import "swiper/components/navigation/navigation.scss";
 import SwiperCore, { Navigation } from "swiper";
 import BookCard from "./BookCard";
 
+//Sample Images
+
 SwiperCore.use([Navigation]);
 
 function ImageSlider() {
@@ -19,9 +21,7 @@ function ImageSlider() {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide>
-          <BookCard />
-        </SwiperSlide>
+        <SwiperSlide></SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>

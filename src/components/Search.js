@@ -5,7 +5,7 @@ const Search = (props) => {
   const [userInput, setUserInput] = useState("");
   const [booksData, setBooksData] = useState([]);
 
-  const handleSubmit = () => {
+  const handleClick = () => {
     request
       // superagent
       .get("https://www.googleapis.com/books/v1/volumes")
@@ -22,7 +22,7 @@ const Search = (props) => {
   return (
     <div className="area">
       <input onChange={(e) => setUserInput(e.target.value)} type="text" />
-      <button onClick={handleSubmit}> Search</button>
+      <button onClick={handleClick}> Search</button>
     </div>
   );
 };
