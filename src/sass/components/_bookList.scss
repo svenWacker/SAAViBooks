@@ -1,0 +1,55 @@
+.list {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  @include max(1180px) {
+    grid-template-columns: auto auto;
+  }
+  @include max(680px) {
+    margin-top: 55px;
+    grid-template-columns: auto;
+  }
+  .grid {
+    cursor: pointer;
+    width: 256px;
+    padding: 0px 0px 225.5px 0px;
+    transition: all 0.7s ease-in-out;
+    @include max(1024px) {
+      width: 100%;
+    }
+    @include max(768px) {
+      padding: 0px 0px;
+      height: 140px;
+    }
+    @include max(340px) {
+      padding: 0px 0px;
+      height: 80px;
+    }
+    h3 {
+      font-size: large;
+    }
+    h4 {
+      font-size: small;
+    }
+    p {
+      font-size: smaller;
+    }
+    &:hover {
+      transform: scale(1.05);
+      h3 {
+        color: rgba(00, 00, 00, 0.5);
+      }
+    }
+    h3,
+    h4 {
+      @include max(768px) {
+        font-size: 1.6rem;
+        left: 20px;
+        bottom: 15px;
+        max-width: 9rem;
+      }
+    }
+  }
+}

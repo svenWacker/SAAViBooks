@@ -1,20 +1,19 @@
 .footer-wrapper {
+  display: flex;
   text-align: center;
-  color: $clr-neutral-900;
+  align-items: center;
+  justify-content: center;
+  // background-color: $dark-teal;
+  color: $clr-neutral-100;
+  background: #015871;
   width: 100vw;
-  .social-wrapper {
-    .social {
+  height: auto;
+  z-index: 3;
+  .copyright {
+    h6 {
       font-size: 1.4rem;
-      color: $clr-neutral-900;
-      margin: 1rem;
-    }
-    .social:hover {
-      color: $clr-neutral-500;
-      transform: scale(1.8);
-      transition: 0.3s;
+      margin: 0.3rem;
+      z-index: 3;
     }
   }
-}
-.copyright {
-  font-size: 1.3rem;
 }
