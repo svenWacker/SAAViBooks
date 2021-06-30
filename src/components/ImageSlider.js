@@ -1,15 +1,11 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import SwiperCore, { Navigation } from "swiper";
-import BookCard from "./BookCard";
-
-//Sample Images
+import bookCoverData from "../api/bookCoverData";
 
 SwiperCore.use([Navigation]);
-
 function ImageSlider() {
   return (
     <div className="slider-container">
@@ -21,12 +17,11 @@ function ImageSlider() {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide></SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
+        {bookCoverData.map((book) => (
+          <SwiperSlide>
+            <img src={require(`../img/book-covers/${book.img}`).default} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
