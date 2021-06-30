@@ -62,7 +62,6 @@ const BookDetails = ({ bookId }) => {
                 </h3>
               </a>
             </div>
-
             <div className="book-ratings-container">
               <div className="google-rating">
                 <SiGoogle className="google-icon" />
@@ -96,10 +95,9 @@ const BookDetails = ({ bookId }) => {
                 Original Language: {bookData.volumeInfo.language}
               </div>
             </div>
-          </div>
-
-          <div className="book-genres">
-            Genres: {bookData.volumeInfo.categories}
+            <div className="book-genres">
+              Genres: {bookData.volumeInfo.categories}
+            </div>
           </div>
 
           <div className="book-description">

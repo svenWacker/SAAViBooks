@@ -3,29 +3,36 @@
 // book-details-container is the main container of bookDetails
 .book-details-container {
   // border: blue 2px solid;
+  border: $bright-teal 2px solid;
+  border-radius: 1rem;
   width: auto;
   height: auto;
   @include flex(center, center, column);
   padding: 1rem;
+  margin: 0.5rem;
   // all items inside .book-details-container
   * {
     padding: 0.2rem 0.1rem;
   }
   // book cover image container
   .book-cover-img-container {
-    border: yellow 2px solid;
+    // border: yellow 2px solid;
     width: auto;
     height: auto;
+    padding: 0;
     // link to book from clicking anchor around image
     a {
-      border: cornflowerblue 2px solid;
-      width: auto;
-      height: auto;
+      // border: cornflowerblue 2px solid;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+
       // actuall book cover image
       img {
-        border: red 2px solid;
+        // border: red 2px solid;
         width: auto;
         height: auto;
+        padding: 0;
       }
     }
   }
@@ -151,7 +158,8 @@
     // border: orange 2px solid;
     width: auto;
     height: auto;
-    padding-top: 0.5rem;
+    padding: 0.5rem 0.2rem;
+    border-bottom: black 1px solid; //seperator line
   }
   // book description
   .book-description {
