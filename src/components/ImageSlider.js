@@ -1,11 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import bookCoverData from "../api/bookCoverData";
+
+//Swiper Package Imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
-import SwiperCore, { Navigation } from "swiper";
-import bookCoverData from "../api/bookCoverData";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
 
+//Swiper Package Modules
 SwiperCore.use([Navigation]);
+SwiperCore.use([Autoplay]);
+
 function ImageSlider() {
   return (
     <div className="slider-container">
@@ -13,6 +18,7 @@ function ImageSlider() {
         spaceBetween={20}
         slidesPerView={4}
         navigation
+        autoplay={{ delay: 2000 }}
         pagination={{ clickable: true }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
