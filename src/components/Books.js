@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 // new components Alina
 import React, { Component } from "react";
-import Search from "./Search";
-import BookList from "./BookList";
-import request from "superagent";
+//import Search from "./Search";
+//import BookList from "./BookList";
+//import request from "superagent";
 
 // books's component BookInfo
 import BookInfo from "./BookInfo";
@@ -13,36 +13,41 @@ class Books extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      books: [],
+      books: this.props.location.state.state,
       field: "",
     };
   }
 
-  findBook = (e) => {
-    e.preventDefault();
-    request
-      // superagent
-      .get("https://www.googleapis.com/books/v1/volumes")
-      .query({ q: this.state.field })
-      .then((data) => {
-        console.log(data);
-        // set state + spread operater -spreading the data from an api to the new array - books property, when user is searching for a book
-        this.setState({ books: [...data.body.items] });
-      });
-  };
+  // findBook = (e) => {
+  //   e.preventDefault();
+  //   request
+  //     // superagent
+  //     .get("https://www.googleapis.com/books/v1/volumes")
+  //     .query({ q: this.state.field })
+  //     .then((data) => {
+  //       console.log(data);
+  //       // set state + spread operater -spreading the data from an api to the new array - books property, when user is searching for a book
+  //       this.setState({ books: [...data.body.items] });
+  //     });
+  // };
 
-  handleSearch = (e) => {
-    // console.log(e.target.value);
-    this.setState({ field: e.target.value });
-  };
+  // handleSearch = (e) => {
+  //   // console.log(e.target.value);
+  //   this.setState({ field: e.target.value });
+  // };
+
+  //-------
 
   render() {
+    console.log(this.state.books);
+    // this.state.books.map((book) => console.log(book.volumeInfo.title));
     return (
       <React.Fragment>
         <div className="books-wrapper">
           <h2 className="page-headings">Meet your next book</h2>
-          <Search findBook={this.findBook} handleSearch={this.handleSearch} />
-          <BookList books={this.state.books} />
+          {this.state.books.map((book) => (
+            <h1>{book.volumeInfo.title}</h1>
+          ))}
         </div>
         <BookInfo />
       </React.Fragment>
