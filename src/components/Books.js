@@ -13,7 +13,7 @@ class Books extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      books: this.props.location.state.state,
+      books1: this.props.location.state.state,
       field: "",
     };
   }
@@ -45,7 +45,7 @@ class Books extends Component {
       <React.Fragment>
         <div className="books-wrapper">
           <h2 className="page-headings">Meet your next book</h2>
-          {this.state.books.map((book) => (
+          {this.state.books1.map((book) => (
             <h1>{book.volumeInfo.title}</h1>
           ))}
         </div>
