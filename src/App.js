@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Landing from "./components/Landing";
-// import Home from "./components/Home";
 import Books from "./components/Books";
 import About from "./components/About";
 import Soon from "./components/Soon";
