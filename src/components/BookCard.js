@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BookCard = (props) => {
   return (
@@ -11,6 +12,8 @@ const BookCard = (props) => {
         <p>{props.description}</p>
         <p>{props.averageRating}</p>
       </div>
+      <Link to={`/BookInfo/${props.id}`}>See Details</Link>
+      {/* <Link to={{pathname:"/BookInfo/:id"}}>See Details</Link> */}
     </div>
   );
 };

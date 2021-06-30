@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 import BookDetails from "./bookInfo components/Book-details";
 import BookReviews from "./bookInfo components/Book-reviews";
 
-const BookInfo = () => {
+const BookInfo = ({ id }) => {
   return (
     <React.Fragment>
-      <BookDetails />
-      <BookReviews />
+      <BookDetails bookId={id} />
+      <BookReviews bookId={id} />
     </React.Fragment>
   );
 };

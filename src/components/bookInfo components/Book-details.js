@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // google icon from react icons
 import { SiGoogle } from "react-icons/si";
 // stars for rating from react icons
 import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
 
-const BookDetails = () => {
+const BookDetails = ({ bookId }) => {
+  useEffect();
+
   return (
     <React.Fragment>
       <div className="book-details-container">
