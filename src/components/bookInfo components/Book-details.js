@@ -91,7 +91,7 @@ const BookDetails = ({ bookId }) => {
 
               <div className="book-small-details-container">
                 <div className="book-year-pub">
-                  <p>published: {bookData.volumeInfo.publishedDate}</p>
+                  <p>Published: {bookData.volumeInfo.publishedDate}</p>
                 </div>
                 <div className="book-lang">
                   Edition Language: {bookData.volumeInfo.language}
