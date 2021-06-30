@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import request from "superagent";
 import { useHistory } from "react-router-dom";
+import { data } from "dom7";
+import { BiSearchAlt } from "react-icons/bi";
 
 const Search = (props) => {
   const [userInput, setUserInput] = useState("");
@@ -26,8 +28,14 @@ const Search = (props) => {
 
   return (
     <div className="area">
-      <input onChange={(e) => setUserInput(e.target.value)} type="text" />
-      <button onClick={handleClick}>Search</button>
+      <input
+        className="search-bar"
+        onChange={(e) => setUserInput(e.target.value)}
+        type="text"
+      />
+      <button className="search-icon" onClick={handleClick}>
+        <BiSearchAlt />
+      </button>
     </div>
   );
 };
