@@ -42,6 +42,9 @@ nav li:hover {
   }
 }
 .search-icon {
-  padding-left: 15px;
-  color: $clr-neutral-100;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 0 10px;
 }
