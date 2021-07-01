@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-
 // new components Alina
 import React, { Component } from "react";
 import Search from "./Search";
 import BookList from "./BookList";
 import request from "superagent";
-
 // books's component BookInfo
 import BookInfo from "./BookInfo";
 
@@ -17,7 +15,6 @@ class Books extends Component {
       field: "",
     };
   }
-
   findBook = (e) => {
     e.preventDefault();
     request
@@ -33,12 +30,10 @@ class Books extends Component {
     //  });
     //  }
   };
-
   handleSearch = (e) => {
     // console.log(e.target.value);
     this.setState({ field: e.target.value });
   };
-
   render() {
     return (
       <React.Fragment>

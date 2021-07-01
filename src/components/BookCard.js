@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-
 const BookCard = (props) => {
   return (
     <Card className="grid">
@@ -30,5 +29,4 @@ const BookCard = (props) => {
     </Card>
   );
 };
-
 export default BookCard;
