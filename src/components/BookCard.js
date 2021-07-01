@@ -4,7 +4,6 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 const BookCard = (props) => {
   console.log(props.id);
-
   return (
     <Card className="grid">
       <Card.Img
