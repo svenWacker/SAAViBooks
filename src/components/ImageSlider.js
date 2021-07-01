@@ -1,32 +1,39 @@
 import React from "react";
+import bookCoverData from "../api/bookCoverData";
 
+//Swiper Package Imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
-import SwiperCore, { Navigation } from "swiper";
-import BookCard from "./BookCard";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
 
-//Sample Images
-
+//Swiper Package Modules
 SwiperCore.use([Navigation]);
+SwiperCore.use([Autoplay]);
 
 function ImageSlider() {
   return (
-    <div className="slider-container">
+    <div className="swiper-container">
       <Swiper
-        spaceBetween={20}
+        spaceBetween={100}
         slidesPerView={4}
         navigation
+        autoplay={{ delay: 2000 }}
         pagination={{ clickable: true }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide></SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
+        {bookCoverData.map((book) => (
+          <SwiperSlide>
+            <div className="img-wrapper">
+              <div className="item-wrapper">
+                <h4>{book.title}</h4>
+                <h5>by {book.author}</h5>
+                <img src={require(`../img/book-covers/${book.img}`).default} />
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
