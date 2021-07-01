@@ -6,7 +6,7 @@ import { SiGoogle } from "react-icons/si";
 import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
 
 const BookDetails = ({ bookId }) => {
-  bookId = "f280CwAAQBAJ"; //temporary for testing
+  // bookId = "f280CwAAQBAJ"; //temporary for testing
 
   const [bookData, setBookData] = useState(false);
 
