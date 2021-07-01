@@ -7,7 +7,7 @@ const BookCard = (props) => {
 
   return (
     <Card className="grid">
-      <Card.Img src={props.image} alt="book cover" />
+      <Card.Img src={props.image ? props.image : `/#img`} alt="book cover" />
       <Card.Body className="card-container">
         <Card.Title>
           {" "}

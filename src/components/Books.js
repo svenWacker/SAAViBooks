@@ -26,9 +26,8 @@ class Books extends Component {
         // set state + spread operator -spreading the data from an api to the new array - books property, when user is searching for a book
         this.setState({ books: [...data.body.items] });
       });
-    //   .catch((err => {console.log(`Your had an ${err}`));
+    //   .catch((err => {console.log('Coming soon'));
     //  });
-    //  }
   };
   handleSearch = (e) => {
     // console.log(e.target.value);
