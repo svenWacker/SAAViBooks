@@ -1,23 +1,50 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import dummyReviews from "../api/dummyReviews";
 
-function TopReviewsGenerator() {
-  const [review, setReview] = useState("");
+//Swiper Package Imports
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import SwiperCore, { Navigation, Autoplay } from "swiper";
 
-  useEffect(() => {
-    fetch("https://api.nytimes.com/svc/books/v3/reviews.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setReview(data.status);
-      });
-  }, []);
+//Swiper Package Modules
+SwiperCore.use([Navigation]);
 
+function ImageSlider() {
   return (
-    <div className="reviews-wrapper">
-      <div>
-        <p className="quote">{review}</p>
-      </div>
+    <div className="slider-container">
+      <Swiper
+        spaceBetween={100}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        {dummyReviews.map((review) => (
+          <SwiperSlide>
+            <div className="reviews-main">
+              <div className="user-photo-container">
+                <img
+                  src={require(`../img/user-photos/${review.user}`).default}
+                />
+              </div>
+
+              <div className="user-reviews">
+                <h3>{review.title}</h3>
+                <h5>
+                  <span className="shade">by:</span> {review.author}
+                </h5>
+                <h5>
+                  <span className="shade">Rating:</span> {review.rating}
+                </h5>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 }
 
-export default TopReviewsGenerator;
+export default ImageSlider;
