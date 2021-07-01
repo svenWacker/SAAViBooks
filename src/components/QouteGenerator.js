@@ -14,11 +14,9 @@ function QuoteGenerator() {
   }, []);
 
   return (
-    <div className="quote-wrapper">
-      <div>
-        <p className="quote">{quote}</p>
-        <p className="author">{author}</p>
-      </div>
+    <div>
+      <p className="quote">{quote}</p>
+      <p className="author">{author}</p>
     </div>
   );
 }
