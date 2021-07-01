@@ -1,10 +1,17 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 const BookCard = (props) => {
+  console.log(props.id);
+
   return (
     <Card className="grid">
-      <Card.Img className="grid-img" src={props.image} alt="book cover" />
+      <Card.Img
+        className="grid-img"
+        src={props.image ? props.image : `/#img`}
+        alt="book cover"
+      />
       <Card.Body className="card-container">
         <Card.Title>
           {" "}
@@ -22,9 +29,10 @@ const BookCard = (props) => {
             ? "Not available"
             : props.published.substring(0, 4)}
         </p>
-        {/* <p>{props.description}</p>
-        <p>{props.averageRating}</p> */}
-        <Button variant="info">Read More</Button>
+        {/* Vivi's link */}
+        <Link to={`/bookInfo/${props.id}`} id={props.id}>
+          <Button variant="info">Read More</Button>
+        </Link>
       </Card.Body>
     </Card>
   );
