@@ -15,9 +15,9 @@ const Menu = () => {
             </span>
           </div>
         </Link>
-        <span>
+        {/* <span>
           <Search />
-        </span>
+        </span> */}
         <Link to="/home" style={{ textDecoration: "none" }}>
           <li>Home</li>
         </Link>

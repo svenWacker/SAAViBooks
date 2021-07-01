@@ -14,19 +14,7 @@
   .grid {
     cursor: pointer;
     width: 256px;
-    padding: 0px 0px 225.5px 0px;
     transition: all 0.7s ease-in-out;
-    @include max(1024px) {
-      width: 100%;
-    }
-    @include max(768px) {
-      padding: 0px 0px;
-      height: 140px;
-    }
-    @include max(340px) {
-      padding: 0px 0px;
-      height: 80px;
-    }
     h3 {
       font-size: large;
     }
@@ -42,14 +30,22 @@
         color: rgba(00, 00, 00, 0.5);
       }
     }
-    h3,
-    h4 {
+    h3 {
       @include max(768px) {
-        font-size: 1.6rem;
-        left: 20px;
-        bottom: 15px;
-        max-width: 9rem;
+        font-size: 1.2rem;
+        // max-width: 9rem;
+      }
+      h4 {
+        @include max(768px) {
+          font-size: 0.8rem;
+          // max-width: 9rem;
+        }
       }
     }
   }
+}
+.grid-img {
+  height: 350px;
+  width: auto;
+  padding: 20px;
 }

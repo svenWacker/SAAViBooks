@@ -38,8 +38,15 @@ class Books extends Component {
     return (
       <React.Fragment>
         <div className="books-wrapper">
-          <h2 className="page-headings">Meet your next book</h2>
-          <Search findBook={this.findBook} handleSearch={this.handleSearch} />
+          <span>
+            <h2 className="page-headings">MEET YOUR NEXT BOOK</h2>
+          </span>
+          <span>
+            <Search findBook={this.findBook} handleSearch={this.handleSearch} />
+          </span>
+          <p>(i.e., book title, author)</p>
+        </div>
+        <div className="book-display">
           <BookList books={this.state.books} />
         </div>
         {/* <BookInfo /> */}
