@@ -2,6 +2,8 @@ import React from "react";
 import BookCard from "./BookCard";
 
 const BookList = (props) => {
+  // const [bookData, setBookData] = useState(false);
+
   if (!props) {
     return <p>Please wait for the loading of the information. Thank you.</p>;
   } else {
@@ -11,7 +13,7 @@ const BookList = (props) => {
         {props.books.map((book, i) => {
           // Vivi's id's
           console.log(book.id);
-          return (
+          return book.volumeInfo.imageLinks ? (
             <BookCard
               key={i}
               image={book.volumeInfo.imageLinks.thumbnail}
@@ -20,6 +22,8 @@ const BookList = (props) => {
               published={book.volumeInfo.publishedDate}
               id={book.id}
             />
+          ) : (
+            ""
           );
         })}
       </div>
