@@ -13,9 +13,9 @@ SwiperCore.use([Autoplay]);
 
 function ImageSlider() {
   return (
-    <div className="slider-container">
+    <div className="swiper-container">
       <Swiper
-        spaceBetween={20}
+        spaceBetween={100}
         slidesPerView={4}
         navigation
         autoplay={{ delay: 2000 }}
@@ -25,7 +25,13 @@ function ImageSlider() {
       >
         {bookCoverData.map((book) => (
           <SwiperSlide>
-            <img src={require(`../img/book-covers/${book.img}`).default} />
+            <div className="img-wrapper">
+              <div className="item-wrapper">
+                <h4>{book.title}</h4>
+                <h5>by {book.author}</h5>
+                <img src={require(`../img/book-covers/${book.img}`).default} />
+              </div>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
