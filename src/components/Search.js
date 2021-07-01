@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import request from "superagent";
 
 const Search = (props) => {
+<<<<<<< HEAD
   const [userInput, setUserInput] = useState("");
   const [booksData, setBooksData] = useState([]);
 
@@ -18,12 +19,15 @@ const Search = (props) => {
     console.log(booksData);
   };
 
+=======
+>>>>>>> main
   return (
     <div className="area">
-      <input onChange={(e) => setUserInput(e.target.value)} type="text" />
-      <button onClick={handleClick}> Search</button>
+      <form onSubmit={props.findBook} action="">
+        <input onChange={props.handleSearch} type="text" />
+        <button type="submit">Search</button>
+      </form>
     </div>
   );
 };
-
 export default Search;

@@ -1,14 +1,15 @@
 // Poster of movies
 @import "./about";
 @import "./bookinfo";
-@import "./books";
 @import "./home";
 @import "./landing";
 @import "./slider";
 @import "./cards.scss";
 @import "./quote-generator";
 @import "./top-reviews.generator";
+@import "./bookList";
 
 // components inside bookInfo
 @import "./bookDetails";
 @import "./bookReviews";
+@import "./books";

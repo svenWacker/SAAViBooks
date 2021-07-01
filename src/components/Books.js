@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-
 // new components Alina
 import React, { Component } from "react";
 import Search from "./Search";
 import BookList from "./BookList";
 import request from "superagent";
-
 // books's component BookInfo
 import BookInfo from "./BookInfo";
 
@@ -17,7 +15,6 @@ class Books extends Component {
       field: "",
     };
   }
-
   findBook = (e) => {
     e.preventDefault();
     request
@@ -29,13 +26,14 @@ class Books extends Component {
         // set state + spread operator -spreading the data from an api to the new array - books property, when user is searching for a book
         this.setState({ books: [...data.body.items] });
       });
+    //   .catch((err => {console.log(`Your had an ${err}`));
+    //  });
+    //  }
   };
-
   handleSearch = (e) => {
     // console.log(e.target.value);
     this.setState({ field: e.target.value });
   };
-
   render() {
     return (
       <React.Fragment>
@@ -44,7 +42,7 @@ class Books extends Component {
           <Search findBook={this.findBook} handleSearch={this.handleSearch} />
           <BookList books={this.state.books} />
         </div>
-        <BookInfo />
+        {/* <BookInfo /> */}
       </React.Fragment>
     );
   }
