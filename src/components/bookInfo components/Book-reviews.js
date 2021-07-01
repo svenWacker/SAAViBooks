@@ -46,49 +46,134 @@ const BookReviews = () => {
         </div>
 
         <div className="other-users-book-review-container">
-          <div className="other-user-details-container">
-            <div className="other-user-name-date-container">
-              <div className="other-user-profile-img-container">
-                <div className="other-user-profile-avatar"></div>
-                {/* <a href="/other-user-link">
+          <div className="user1">
+            <div className="other-user-details-container">
+              <div className="other-user-name-date-container">
+                <div className="other-user-profile-img-container">
+                  <div className="other-user-profile-avatar"></div>
+                  {/* <a href="/other-user-link">
                 <img
                   className="other-user-profile-img"
                   alt="other user's profile picture"
                 />
               </a> */}
+                </div>
+                <p className="other-user-name">Ronan86</p>
+                <p className="other-user-post-date">21-06-2021</p>
               </div>
-              <p className="other-user-name">Other user username</p>
-              <p className="other-user-post-date">date of review</p>
+
+              <div className="other-user-rating">4.5</div>
             </div>
 
-            <div className="other-user-rating">other user's rating</div>
+            <div className="other-users-book-review">
+              Book Review: Great Book
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
+                dapibus nisl. Vivamus sed suscipit lorem, id mattis nulla. Sed
+                vehicula fringilla tortor, nec fringilla velit. Ut ut massa quis
+                massa pulvinar imperdiet in sed urna. Ut facilisis ante ac
+                sollicitudin tempus. Vestibulum ante ipsum primis in faucibus
+                orci luctus et ultrices posuere cubilia curae; Nunc gravida
+                libero lacus, sed faucibus purus semper in. Vestibulum mattis
+                ante sagittis scelerisque aliquam. Donec non urna non elit
+                sollicitudin gravida in quis nisl. Morbi sit amet laoreet velit,
+                sit amet feugiat ipsum.
+              </p>
+              <p>
+                Vestibulum a pellentesque nisi. Vivamus tortor massa, placerat
+                sit amet consectetur quis, viverra eu lacus. Sed consequat
+                laoreet porta. Phasellus posuere sed augue et efficitur. Donec
+                ligula elit, maximus bibendum est vitae, maximus ornare lorem.
+                Donec eget arcu id lectus tincidunt vehicula. Vivamus porta ante
+                eget libero tristique, sed ultrices purus luctus. Aenean ac
+                sagittis lorem. Integer faucibus, nisl eget pretium gravida,
+                turpis justo gravida eros, non ullamcorper nulla neque rhoncus
+                mi. Duis pharetra mi nec ipsum ultricies auctor.
+              </p>
+            </div>
           </div>
+          <div className="user2">
+            <div className="other-user-details-container">
+              <div className="other-user-name-date-container">
+                <div className="other-user-profile-img-container">
+                  <div className="other-user-profile-avatar"></div>
+                  {/* <a href="/other-user-link">
+                <img
+                  className="other-user-profile-img"
+                  alt="other user's profile picture"
+                />
+              </a> */}
+                </div>
+                <p className="other-user-name">Lizzydizzy1</p>
+                <p className="other-user-post-date">13-06-2021</p>
+              </div>
 
-          <div className="other-users-book-review">
-            Book Review:
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
-              dapibus nisl. Vivamus sed suscipit lorem, id mattis nulla. Sed
-              vehicula fringilla tortor, nec fringilla velit. Ut ut massa quis
-              massa pulvinar imperdiet in sed urna. Ut facilisis ante ac
-              sollicitudin tempus. Vestibulum ante ipsum primis in faucibus orci
-              luctus et ultrices posuere cubilia curae; Nunc gravida libero
-              lacus, sed faucibus purus semper in. Vestibulum mattis ante
-              sagittis scelerisque aliquam. Donec non urna non elit sollicitudin
-              gravida in quis nisl. Morbi sit amet laoreet velit, sit amet
-              feugiat ipsum.
-            </p>
-            <p>
-              Vestibulum a pellentesque nisi. Vivamus tortor massa, placerat sit
-              amet consectetur quis, viverra eu lacus. Sed consequat laoreet
-              porta. Phasellus posuere sed augue et efficitur. Donec ligula
-              elit, maximus bibendum est vitae, maximus ornare lorem. Donec eget
-              arcu id lectus tincidunt vehicula. Vivamus porta ante eget libero
-              tristique, sed ultrices purus luctus. Aenean ac sagittis lorem.
-              Integer faucibus, nisl eget pretium gravida, turpis justo gravida
-              eros, non ullamcorper nulla neque rhoncus mi. Duis pharetra mi nec
-              ipsum ultricies auctor.
-            </p>
+              <div className="other-user-rating">5</div>
+            </div>
+
+            <div className="other-users-book-review">
+              Book Review: Loved The Book
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
+                dapibus nisl. Vivamus sed suscipit lorem, id mattis nulla. Sed
+                vehicula fringilla tortor, nec fringilla velit. Ut ut massa quis
+                massa pulvinar imperdiet in sed urna. Ut facilisis ante ac
+                sollicitudin tempus. Vestibulum ante ipsum primis in faucibus
+                orci luctus et ultrices posuere cubilia curae; Nunc gravida
+                libero lacus, sed faucibus purus semper in. Vestibulum mattis
+                ante sagittis scelerisque aliquam. Donec non urna non elit
+                sollicitudin gravida in quis nisl. Morbi sit amet laoreet velit,
+                sit amet feugiat ipsum.
+              </p>
+              <p>
+                Vestibulum a pellentesque nisi. Vivamus tortor massa, placerat
+                sit amet consectetur quis, viverra eu lacus. Sed consequat
+                laoreet porta. Phasellus posuere sed augue et efficitur. Donec
+                ligula elit, maximus bibendum est vitae, maximus ornare lorem.
+                Donec eget arcu id lectus tincidunt vehicula. Vivamus porta ante
+                eget libero tristique, sed ultrices purus luctus. Aenean ac
+                sagittis lorem. Integer faucibus, nisl eget pretium gravida,
+                turpis justo gravida eros, non ullamcorper nulla neque rhoncus
+                mi. Duis pharetra mi nec ipsum ultricies auctor.
+              </p>
+            </div>
+          </div>
+          <div className="user3">
+            <div className="other-user-details-container">
+              <div className="other-user-name-date-container">
+                <div className="other-user-profile-img-container">
+                  <div className="other-user-profile-avatar"></div>
+                  {/* <a href="/other-user-link">
+                <img
+                  className="other-user-profile-img"
+                  alt="other user's profile picture"
+                />
+              </a> */}
+                </div>
+                <p className="other-user-name">Beheader</p>
+                <p className="other-user-post-date">01-06-2021</p>
+              </div>
+
+              <div className="other-user-rating">4.5</div>
+            </div>
+
+            <div className="other-users-book-review">
+              Book Review: Good Read
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
+                dapibus nisl. Vivamus sed suscipit lorem, id mattis nulla. Sed
+                vehicula fringilla tortor, nec fringilla velit. Ut ut massa quis
+                massa pulvinar imperdiet in sed urna. Ut facilisis ante ac
+                sollicitudin tempus. Vestibulum ante ipsum primis in faucibus
+                orci luctus et ultrices posuere cubilia curae; Nunc gravida
+                libero lacus, sed faucibus purus semper in.
+              </p>
+              <p>
+                Vestibulum a pellentesque nisi. Vivamus tortor massa, placerat
+                sit amet consectetur quis, viverra eu lacus. Sed consequat
+                laoreet porta.
+              </p>
+            </div>
           </div>
         </div>
       </div>
