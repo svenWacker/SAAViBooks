@@ -1,25 +1,13 @@
-.container {
-  max-width: 1025px;
-  margin: auto;
-  padding: 0px 1.5rem;
-}
-
 .books-wrapper {
-  padding-top: 5rem;
-  padding-bottom: 0;
   position: relative;
-  @include max(1024px) {
-    display: flex;
-    justify-content: space-between;
-  }
-  @include max(768px) {
-    padding-top: 96px;
-  }
-  &__flex {
-    display: flex;
-    align-items: center;
-    @include max(1024px) {
-      flex-direction: column;
-    }
-  }
+  background-image: url(../../img/bg-landing.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  //   width: 100%;
+  //   height: 90vh;
 }

@@ -13,20 +13,7 @@ const BookList = (props) => {
             title={book.volumeInfo.title}
             author={book.volumeInfo.authors}
             published={book.volumeInfo.publishedDate}
-            description={book.volumeInfo.description}
-            averageRating={book.volumeInfo.averageRating}
           />
-          // <BookCard
-          //     thumbnail={thumbnail}
-          //     title={item.volumeInfo.title}
-          //     pageCount={item.volumeInfo.pageCount}
-          //     language={item.volumeInfo.language}
-          //     authors={item.volumeInfo.authors}
-          //     publisher={item.volumeInfo.publisher}
-          //     description={item.volumeInfo.description}
-          //     previewLink={item.volumeInfo.previewLink}
-          //     infoLink={item.volumeInfo.infoLink}
-          //   />
         );
       })}
     </div>

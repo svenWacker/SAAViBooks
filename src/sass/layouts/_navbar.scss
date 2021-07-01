@@ -1,18 +1,21 @@
 .nav-container {
-  background-color: $bright-teal;
+  background-color: white;
   opacity: none;
 }
-.navBar {
+.navbar {
   display: flex;
   display: inline-block;
   width: 100vw;
   height: 10vh;
   background-color: transparent;
+  border-left: 30px solid white;
+  border-right: 30px solid white;
 }
 nav li {
   list-style: none;
-  color: $clr-neutral-100;
+  color: $clr-neutral-500;
   margin: 10px;
+  font-size: 13px;
 }
 
 nav li:hover {
@@ -23,18 +26,17 @@ nav li:hover {
 
 #logo-wrapper {
   .logo img {
-    margin: 10px;
-    width: 145px;
-    height: 40px;
+    margin: 0px;
+    width: 120px;
+    height: 18px;
   }
 }
 
 .search-bar {
-  border: none;
+  border: 1px solid $bright-teal;
   border-radius: 50px;
   height: 25px;
   width: 40vw;
-  background-color: #f5f5f5;
   font-size: 12px;
   padding: 10px;
   &:focus {
@@ -42,6 +44,9 @@ nav li:hover {
   }
 }
 .search-icon {
-  padding-left: 15px;
-  color: $clr-neutral-100;
+  background-color: transparent;
+  border: none;
+  color: $bright-teal;
+  font-size: 18px;
+  padding: 0 10px;
 }
