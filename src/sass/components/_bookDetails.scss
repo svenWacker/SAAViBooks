@@ -19,7 +19,7 @@
     font-size: 14px;
   }
   // border: blue 2px solid;
-  border: $bright-teal 2px solid;
+  border: $dark-teal 2px solid;
   border-radius: 1rem;
   @include flex(space-between, center, row);
   padding: 1rem;
