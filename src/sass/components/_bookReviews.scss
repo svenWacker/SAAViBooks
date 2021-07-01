@@ -17,12 +17,12 @@
     width: auto;
     height: auto;
     .user-book-review-form {
-      border: orange 2px solid;
+      // border: orange 2px solid;
       width: auto;
       height: auto;
       @include flex(center, flex-end, column);
       .user-rating {
-        border: limegreen 2px solid;
+        // border: limegreen 2px solid;
         width: auto;
         height: auto;
         // label {
@@ -32,7 +32,7 @@
         }
       }
       textarea {
-        border: hotpink 2px solid;
+        // border: hotpink 2px solid;
         width: 100%;
         height: auto;
         // min-width: 20rem;
@@ -40,14 +40,16 @@
         font-family: inherit;
       }
       .book-review-submit-button {
-        border: yellowgreen 2px solid;
+        // border: yellowgreen 2px solid;
         width: auto;
         height: auto;
+        border: none;
         border-radius: 0.3rem;
         padding: 0.2rem;
         background-color: $light-teal;
         // margin-left: 1rem;
         // margin-bottom: 0.4rem;
+        margin-top: 1rem;
         align-self: flex-end;
       }
     }
@@ -60,12 +62,12 @@
     margin-top: 1rem;
     padding: 0.5rem;
     .other-user-details-container {
-      border: green 2px solid;
+      // border: green 2px solid;
       width: auto;
       height: auto;
       @include flex(flex-start, center, row);
       .other-user-profile-img-container {
-        border: black 2px solid;
+        // border: black 2px solid;
         width: auto;
         height: auto;
         .other-user-profile-avatar {
@@ -74,44 +76,44 @@
           width: 3rem;
         }
         // a {
-        //   border: blue 2px solid;
+        // border: blue 2px solid;
         //   width: auto;
         //   height: auto;
 
         //   img {
-        //     border: red 2px solid;
+        // border: red 2px solid;
         //     width: auto;
         //     height: auto;
         //   }
         // }
       }
       .other-user-name-date-container {
-        border: pink 2px solid;
+        // border: pink 2px solid;
         width: auto;
         height: auto;
         @include flex(space-around, center, row);
         flex-wrap: wrap;
         margin-right: 1rem;
         .other-user-name {
-          border: blue 2px solid;
+          // border: blue 2px solid;
           width: auto;
           height: auto;
           margin: 0 1rem;
         }
         .other-user-post-date {
-          border: brown 2px solid;
+          // border: brown 2px solid;
           width: auto;
           height: auto;
         }
       }
       .other-user-rating {
-        border: green 2px solid;
+        // border: green 2px solid;
         width: auto;
         height: auto;
       }
     }
     .other-users-book-review {
-      border: violet 2px solid;
+      // border: violet 2px solid;
       width: auto;
       height: auto;
     }
