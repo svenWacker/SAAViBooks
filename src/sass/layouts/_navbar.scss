@@ -4,12 +4,15 @@
 }
 .navbar {
   display: flex;
-  display: inline-block;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: inline-block;
   width: 100vw;
-  height: 10vh;
+  height: 5vh;
   background-color: transparent;
-  border-left: 30px solid white;
-  border-right: 30px solid white;
+  border-left: 50px solid white;
+  border-right: 50px solid white;
+  margin: 10px;
 }
 nav li {
   list-style: none;
@@ -26,7 +29,7 @@ nav li:hover {
 
 #logo-wrapper {
   .logo img {
-    margin: 0px;
+    margin: 10px;
     width: 120px;
     height: 18px;
   }
