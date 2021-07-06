@@ -108,7 +108,7 @@ const BookDetails = ({ bookId }) => {
             </div>
             <div className="book-description">
               Book description:
-              <p>{bookData.volumeInfo.description}</p>
+              <div>{bookData.volumeInfo.description}</div>
             </div>
           </div>
         </div>
