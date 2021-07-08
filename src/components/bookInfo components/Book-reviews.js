@@ -1,7 +1,7 @@
 import React from "react";
 
 // dummy user's data
-// import DummyUsers from "../../dummyUsers.json";
+import DummyUsers from "../../dummyUsers.json";
 
 const BookReviews = () => {
   // const handleSubmit(e)=>{
@@ -10,6 +10,7 @@ const BookReviews = () => {
   // onClick={handleSubmit}
   return (
     <React.Fragment>
+      
       <div className="book-reviews-container">
         <div className="user-book-review-container">
           <form className="user-book-review-form">
