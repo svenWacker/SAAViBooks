@@ -22,7 +22,7 @@ npm i react-bootstrap bootstrap@4.6.0
 
 #### clone repository
 
-git clone https://github.com/svenWacker/SAAViBooks.git
+git clone <https://github.com/svenWacker/SAAViBooks.git>
 
 #### npm install
 
